@@ -22,6 +22,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python -m src.hunt3 2>&1 | tee state/hunt3.log
 
+      - name: copilot header shapes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -m src.hunt4 2>&1 | tee -a state/hunt3.log
+
       - name: official ai-inference action
         id: ai
         uses: actions/ai-inference@v1
