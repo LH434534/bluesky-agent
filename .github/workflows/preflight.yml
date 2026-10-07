@@ -1,0 +1,69 @@
+name: preflight
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  models: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: diagnostics
+        id: diag
+        env:
+          BSKY_HANDLE: ${{ vars.BSKY_HANDLE || secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          PDS: ${{ vars.PDS }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AUTONOMY: ${{ vars.AUTONOMY }}
+        run: |
+          mkdir -p state
+          {
+            echo "=== preflight $(date -u +%FT%TZ) ==="
+            echo "handle=[$BSKY_HANDLE] pds=[$PDS]"
+            echo "autonomy=[$AUTONOMY] run=${GITHUB_RUN_ID}"
+            echo
+            echo "--- preflight ---"
+            python tools/preflight.py 2>&1
+            echo "preflight_exit=$?"
+            echo
+            echo "--- news smoke ---"
+            python -m src.fame_run 2>&1 | tail -20
+            echo "news_exit=$?"
+            echo
+            echo "--- llm provider ---"
+            python -c "import sys; sys.path.insert(0,'.'); from src import llm; print(llm.status())"
+            echo "--- net probe ---"
+            python tools/netprobe.py 2>&1 | tail -25
+            echo "--- endpoint hunt ---"
+            python -m src.hunt 2>&1 | tail -40
+            echo "--- endpoint hunt ---"
+            python -m src.hunt 2>&1 | tail -40
+            echo "--- model catalog probe ---"
+            python -m src.probe 2>&1 | tail -20
+            echo "--- dry run session ---"
+            DRY_RUN=1 python -m src.act_run 2>&1 | tail -30
+            echo "act_exit=$?"
+          } 2>&1 | tee state/preflight.log
+      - name: publish diagnostics
+        if: always()
+        run: |
+          git config user.name "ratman4080"
+          git config user.email "bot@nest.local"
+          git add state/preflight.log
+          if git diff --cached --quiet; then echo "no change"; else
+            git commit -m "preflight: diagnostics [skip ci]"
+            git pull --rebase --autostash origin main || true
+            git push || (git pull --rebase origin main && git push)
+          fi

@@ -1,0 +1,187 @@
+handle_env: BSKY_HANDLE
+handle: lh434534.github.io
+pds: https://bsky.social
+model: openai/gpt-4o-mini
+autonomy: 2
+
+post:
+  max_chars: 300
+  per_day: 6
+  min_gap_minutes: 90
+  dedupe_window: 200
+
+reply:
+  enabled: true
+  per_day: 12
+  min_gap_minutes: 12
+  max_chars: 280
+  only_on: [like, reply]
+  require_relevance: 0.34
+
+like:
+  enabled: true
+  min_relevance: 0.10
+  per_day: 40
+  min_gap_seconds: 45
+  burst_max: 4
+  burst_cooldown_minutes: 35
+
+follow:
+  enabled: true
+  per_day: 12
+  min_gap_minutes: 25
+  unfollow_after_days: 21
+  unfollow_if_no_followback: true
+
+repost:
+  enabled: true
+  per_day: 5
+  min_gap_minutes: 45
+
+human:
+  active_hours: [7, 23]
+  timezone_offset: -3
+  night_activity_scale: 0.25
+  jitter_pct: 35
+  skip_probability: 0.18
+  max_actions_per_run: 6
+
+safety:
+  blocklist_terms:
+    - crypto airdrop
+    - free mint
+    - nft drop
+    - dm me
+    - giveaway
+    - follow train
+    - like4like
+    - pump
+    - casino
+    - betting tip
+  never_reply_to_min_followers: 0
+  max_replies_per_author_per_day: 1
+  max_likes_per_author_per_day: 2
+  cooldown_after_error_minutes: 30
+  consecutive_error_limit: 3
+  kill_switch_file: STOP
+
+discovery:
+  feeds:
+    - at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.generator/whats-hot
+  search_terms:
+    - automacao
+    - self-hosted
+    - automação residencial
+    - small web
+    - python
+    - infraestrutura
+  sample_size: 30
+
+langs:
+  - pt-BR
+topics:
+  - small web, self-hosted tools, quiet automation
+  - automation that actually ships instead of demos
+  - weird corners of the internet nobody reads anymore
+  - building things at 3am and why it works
+  - why simple systems outlive clever ones
+voice_file: state/voice.md
+site_output: docs/index.html
+
+models:
+  floor: openai/gpt-4o-mini
+  roles:
+    draft: openai/gpt-4.1
+    angle: openai/gpt-4.1
+    critic: openai/gpt-4o-mini
+    filter: openai/gpt-4.1-mini
+    reply: openai/gpt-4.1-mini
+    score: openai/gpt-4o-mini
+    reason: deepseek/DeepSeek-R1
+
+news:
+  enabled: true
+  min_sources: 2
+  strict_numbers: true
+  max_age_hours: 30
+  gdelt:
+    enabled: true
+    timespan: 24h
+    maxrecords: 75
+    language: ""
+    country: ""
+    queries:
+      - artificial intelligence
+      - climate energy grid
+      - central bank interest rates
+      - space launch rocket
+      - cybersecurity
+      - "open source"
+      - semiconductor
+      - Brazil economy
+  wikipedia:
+    enabled: true
+    langs: [en, pt]
+  rss:
+    enabled: true
+    feeds:
+      - https://feeds.bbci.co.uk/news/world/rss.xml
+      - https://feeds.bbci.co.uk/news/technology/rss.xml
+      - https://feeds.bbci.co.uk/news/science_and_environment/rss.xml
+      - https://www.theguardian.com/world/rss
+      - https://www.theguardian.com/technology/rss
+      - https://news.ycombinator.com/rss
+      - https://www.nasa.gov/feed/
+      - https://feeds.arstechnica.com/arstechnica/index
+      - https://www.wired.com/feed/rss
+  hackernews:
+    enabled: true
+    hits: 40
+    min_points: 60
+  google_news:
+    enabled: false
+    queries: []
+    locale: {hl: pt-BR, gl: BR, ceid: BR:pt-419}
+  trusted_domains:
+    - reuters.com
+    - apnews.com
+    - bbc.co.uk
+    - bbc.com
+    - ft.com
+    - nature.com
+    - science.org
+    - arxiv.org
+    - github.blog
+    - nasa.gov
+    - esa.int
+    - who.int
+    - imf.org
+    - worldbank.org
+    - en.wikipedia.org
+    - pt.wikipedia.org
+
+timing:
+  enabled: true
+  min_samples: 3
+  peak_boost: 1.6
+  offpeak_probability: 0.25
+  fallback_hours: [9, 12, 18, 21]
+
+growth:
+  enabled: true
+  discovery_terms:
+    - self-hosted
+    - homelab
+    - "small web"
+    - python
+    - infrastructure
+    - "open source"
+    - devops
+    - linux
+    - automação
+    - "ciência de dados"
+  min_followers: 50
+  max_followers: 120000
+  skip_if_replies_over: 200
+  max_new_targets_per_run: 8
+  reply_bias: 0.45

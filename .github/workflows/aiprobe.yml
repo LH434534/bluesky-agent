@@ -1,0 +1,56 @@
+name: ai-probe
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 */6 * * *"
+
+permissions:
+  contents: write
+  models: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+
+      - name: probe github models routes
+        id: probe
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_MODELS_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
+        run: python -m src.aiprobe 2>&1 | tee state/aiprobe.log
+
+      - name: official ai-inference action
+        id: ai
+        continue-on-error: true
+        uses: actions/ai-inference@v1
+        with:
+          model: openai/gpt-4o-mini
+          prompt: "Reply with exactly: NEST"
+
+      - name: record action result
+        env:
+          OUT: ${{ steps.ai.outputs.response }}
+          CONC: ${{ steps.ai.conclusion }}
+        run: |
+          echo "--- actions/ai-inference ---" | tee -a state/aiprobe.log
+          echo "conclusion=$CONC" | tee -a state/aiprobe.log
+          echo "response=${OUT:0:400}" | tee -a state/aiprobe.log
+
+      - name: commit evidence
+        run: |
+          git config user.name "ratman4080"
+          git config user.email "bot@nest.local"
+          git add state/aiprobe.log state/aiprobe.json
+          if git diff --cached --quiet; then echo "no change"; else
+            git commit -m "ai: probe [skip ci]"
+            git pull --rebase --autostash origin ${GITHUB_REF_NAME} || true
+            git push || (git pull --rebase origin ${GITHUB_REF_NAME} && git push)
+          fi

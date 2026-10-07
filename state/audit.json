@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-07T00:37:33.751350Z",
+  "passed": 15,
+  "failed": 0,
+  "passes": [
+    "numbers",
+    "offbrand-skip",
+    "headline-clean",
+    "market-skip",
+    "fact-only",
+    "domain-word",
+    "spam-gate",
+    "dedupe",
+    "policy-budget",
+    "facets",
+    "rss-parse",
+    "config-valid",
+    "workflow-syntax",
+    "no-secrets",
+    "compiles"
+  ],
+  "fails": []
+}

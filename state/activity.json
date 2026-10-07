@@ -1,0 +1,51 @@
+[
+  {
+    "kind": "reply",
+    "ok": true,
+    "text": "O que sobrevive e o simples. Todo dashboard que eu instalei morreu em dois anos.",
+    "to": "pydev",
+    "at": "2026-10-06T21:59:54.918547Z"
+  },
+  {
+    "kind": "reply",
+    "ok": false,
+    "reason": "min gap not met (reply)",
+    "at": "2026-10-06T21:59:55.112406Z"
+  },
+  {
+    "kind": "repost",
+    "ok": true,
+    "to": "pydev",
+    "at": "2026-10-06T21:59:55.485792Z"
+  },
+  {
+    "kind": "reply",
+    "ok": false,
+    "reason": "min gap not met (reply)",
+    "at": "2026-10-06T21:59:55.669576Z"
+  },
+  {
+    "kind": "follow",
+    "ok": true,
+    "to": "pydev",
+    "at": "2026-10-06T21:59:56.352422Z"
+  },
+  {
+    "kind": "like",
+    "ok": true,
+    "to": "dev1",
+    "at": "2026-10-06T21:59:56.741203Z"
+  },
+  {
+    "kind": "reply",
+    "ok": false,
+    "reason": "min gap not met (reply)",
+    "at": "2026-10-06T21:59:57.011358Z"
+  },
+  {
+    "kind": "post",
+    "ok": true,
+    "text": "Bancos centrais mantiveram juros. Inflacao esfriando muda calculo de quem segura caixa.",
+    "at": "2026-10-06T21:59:58.191395Z"
+  }
+]

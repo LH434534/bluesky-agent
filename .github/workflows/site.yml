@@ -1,0 +1,91 @@
+name: site-build
+
+on:
+  workflow_run:
+    workflows: ["agent-act", "agent-compose"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python -m src.site
+      - name: commit dashboard
+        run: |
+          git config user.name "ratman4080"
+          git config user.email "bot@nest.local"
+          git add docs/
+          if git diff --cached --quiet; then echo "no change"; else
+            git commit -m "site: dashboard [skip ci]"
+            git pull --rebase --autostash origin ${{ github.ref_name }} || true
+            git push || (git pull --rebase origin ${{ github.ref_name }} && git push)
+          fi
+      - name: build dashboard
+        run: python -m src.site
+      - name: commit dashboard
+        run: |
+          git config user.name "ratman4080"
+          git config user.email "bot@nest.local"
+          git add docs/
+          if git diff --cached --quiet; then echo "no change"; else
+            git commit -m "site: dashboard [skip ci]"
+            git pull --rebase --autostash origin ${GITHUB_REF_NAME} || true
+            git push || (git pull --rebase origin ${GITHUB_REF_NAME} && git push)
+          fi
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deploy
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: fallback — publish dashboard via gh-pages branch
+        if: steps.deploy.outcome != 'success'
+        run: |
+          git config user.name "ratman4080"
+          git config user.email "bot@nest.local"
+          git checkout -B gh-pages
+          git add -f docs/index.html
+          git commit -m "site: gh-pages fallback [skip ci]" || echo "nothing"
+          git push -f origin gh-pages
+      - name: report
+        run: echo "pages=${{ steps.deploy.outcome }}"
+        continue-on-error: true
+      - name: fallback — publish dashboard via gh-pages branch
+        if: steps.deploy.outcome != 'success'
+        run: |
+          git config user.name "ratman4080"
+          git config user.email "bot@nest.local"
+          git checkout -B gh-pages
+          git add -f docs/index.html
+          git commit -m "site: gh-pages fallback [skip ci]" || echo "nothing"
+          git push -f origin gh-pages
+      - name: report
+        run: echo "pages=${{ steps.deploy.outcome }}"

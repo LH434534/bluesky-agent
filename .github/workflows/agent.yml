@@ -1,0 +1,63 @@
+name: agent-act
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "1 = decide but do not execute"
+        default: "0"
+
+permissions:
+  contents: write
+  models: read
+
+concurrency:
+  group: agent-act
+  cancel-in-progress: true
+
+jobs:
+  act:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+
+      - name: kill switch
+        id: stop
+        run: |
+          if [ -f state/STOP ]; then
+            echo "STOP file present — aborting"
+            exit 0
+          fi
+          echo "running"
+
+      - name: autonomous session
+        env:
+          BSKY_HANDLE: ${{ vars.BSKY_HANDLE || secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          PDS: ${{ vars.PDS }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AUTONOMY: ${{ vars.AUTONOMY }}
+          DRY_RUN: ${{ inputs.dry_run || vars.DRY_RUN || '0' }}
+        run: |
+          mkdir -p state
+          python -m src.act_run 2>&1 | tee state/act.log
+
+      - name: commit state
+        run: |
+          git config user.name "ratman4080"
+          git config user.email "bot@nest.local"
+          git add state/
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+          else
+            git commit -m "agent: session [skip ci]"
+            git pull --rebase --autostash origin ${{ github.ref_name }} || true
+            git push || (git pull --rebase origin ${{ github.ref_name }} && git push)
+          fi

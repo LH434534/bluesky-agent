@@ -1,0 +1,54 @@
+{
+  "actions": [
+    {
+      "kind": "reply",
+      "target": "did:d",
+      "ok": true,
+      "at": "2026-10-06T21:59:54.770257Z"
+    },
+    {
+      "kind": "repost",
+      "target": "did:d",
+      "ok": true,
+      "at": "2026-10-06T21:59:55.327040Z"
+    },
+    {
+      "kind": "follow",
+      "target": "did:d",
+      "ok": true,
+      "at": "2026-10-06T21:59:56.024843Z"
+    },
+    {
+      "kind": "like",
+      "target": "did:a",
+      "ok": true,
+      "at": "2026-10-06T21:59:56.568172Z"
+    },
+    {
+      "kind": "post",
+      "target": "",
+      "ok": true,
+      "at": "2026-10-06T21:59:57.924038Z"
+    }
+  ],
+  "errors": [],
+  "followed": {
+    "did:d": {
+      "handle": "pydev",
+      "at": "2026-10-06T21:59:56.193256Z"
+    }
+  },
+  "last": {
+    "reply": "2026-10-06T21:59:54.770257Z",
+    "repost": "2026-10-06T21:59:55.327040Z",
+    "follow": "2026-10-06T21:59:56.024843Z",
+    "like": "2026-10-06T21:59:56.568172Z",
+    "post": "2026-10-06T21:59:57.924038Z"
+  },
+  "models": {
+    "2026-10-06": {
+      "openai/gpt-4.1-mini": 1,
+      "openai/gpt-4o-mini": 1
+    }
+  }
+}

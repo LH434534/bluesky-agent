@@ -1,0 +1,35 @@
+name: agent-compose
+
+on:
+  schedule:
+    - cron: "7 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  models: read
+
+jobs:
+  compose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: keep queue stocked
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -m src.compose_run || echo "no draft this run"
+      - name: commit
+        run: |
+          git config user.name "ratman4080"
+          git config user.email "bot@nest.local"
+          git add state/
+          if git diff --cached --quiet; then echo "no change"; else
+            git commit -m "agent: queue draft [skip ci]"
+            git pull --rebase --autostash origin ${{ github.ref_name }} || true
+            git push || (git pull --rebase origin ${{ github.ref_name }} && git push)
+          fi

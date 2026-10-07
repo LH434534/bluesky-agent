@@ -1,0 +1,13 @@
+[
+  {
+    "ok": true,
+    "text": "Bancos centrais mantiveram juros. Inflacao esfriando muda calculo de quem segura caixa.",
+    "hash": "38335f4614f78117",
+    "topic": "building things at 3am and why it works",
+    "verdict": "PASS concrete, dry, every claim traces to source",
+    "model": "openai/gpt-4o-mini",
+    "createdAt": "2026-10-06T21:59:57.413272Z",
+    "uri": "at://did:plc:me/app.bsky.feed.post/5",
+    "postedAt": "2026-10-06T21:59:57.750496Z"
+  }
+]
