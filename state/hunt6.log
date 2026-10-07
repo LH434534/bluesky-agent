@@ -19,30 +19,68 @@ Learn more at https://gh.io/copilot-cli
 
 USAGE
   gh copilot [flags] [args]
---- form A: quoted single word ---
+--- form A: gh copilot -- -p ---
 ✓ Copilot CLI installed successfully
-error: Invalid command format.
+Error: Classic Personal Access Tokens (ghp_) are not supported by Copilot.
 
-It looks like your prompt was not quoted, so the extra words were treated as separate arguments.
-Wrap the prompt in quotes, for example: copilot -p "your prompt here"
+The GH_TOKEN environment variable contains a classic PAT.
+Please use a Fine-Grained Personal Access Token or another authentication method.
 
-Try 'copilot --help' for more information.
---- form B: -i flag ---
-error: Invalid command format.
+To fix this, you can:
+  • Replace the token in GH_TOKEN with a fine-grained PAT
+  • Unset GH_TOKEN and run 'gh auth login' to authenticate
+  • Unset GH_TOKEN and start 'copilot', then use the '/login' command
+--- form B: gh copilot -- --prompt ---
+Error: Classic Personal Access Tokens (ghp_) are not supported by Copilot.
 
-It looks like your prompt was not quoted, so the extra words were treated as separate arguments.
-Wrap the prompt in quotes, for example: copilot -p "your prompt here"
+The GH_TOKEN environment variable contains a classic PAT.
+Please use a Fine-Grained Personal Access Token or another authentication method.
 
-Try 'copilot --help' for more information.
---- form C: bare copilot -p ---
-/home/runner/work/_temp/116c2766-846f-4aa6-a2a4-88bef304328e.sh: line 11: copilot: command not found
---- form D: explain ---
-error: Invalid command format.
+To fix this, you can:
+  • Replace the token in GH_TOKEN with a fine-grained PAT
+  • Unset GH_TOKEN and run 'gh auth login' to authenticate
+  • Unset GH_TOKEN and start 'copilot', then use the '/login' command
+--- form C: gh copilot suggest -- -p ---
+Error: Classic Personal Access Tokens (ghp_) are not supported by Copilot.
 
-Did you mean: copilot -i "explain ls"?
+The GH_TOKEN environment variable contains a classic PAT.
+Please use a Fine-Grained Personal Access Token or another authentication method.
 
-For non-interactive mode, use the -p or --prompt option.
-Try 'copilot --help' for more information.
+To fix this, you can:
+  • Replace the token in GH_TOKEN with a fine-grained PAT
+  • Unset GH_TOKEN and run 'gh auth login' to authenticate
+  • Unset GH_TOKEN and start 'copilot', then use the '/login' command
+--- form D: gh copilot -- --help ---
+Usage: copilot [OPTIONS] [COMMAND]
+
+GitHub Copilot CLI - An AI-powered coding assistant.
+
+Start an interactive session to chat with Copilot, or use -p/--prompt for
+non-interactive scripting. Copilot can edit files, run shell commands, search
+your codebase, and more — all with configurable permissions.
+
+Run `copilot <command> --help` for details on any subcommand.
+
+Commands:
+  app          Open the GitHub Copilot app
+  login        Authenticate with Copilot
+  help         Display help information
+  init         Initialize Copilot instructions
+  config       Manage configuration settings
+  update       Download the latest version
+  version      Display version information
+  workflow     Run dynamic workflows
+  sessions     Manage saved sessions
+  memories     Manage memories
+  plugin       Manage plugins
+  mcp          Manage MCP servers
+  skill        Manage skills
+  instruction  Inspect instruction sources
+  lsp          Inspect language server configuration
+  sandbox      Manage command sandboxing
+  completion   Generate a shell completion script
+
+Options:
 --- form E: ai-inference action ---
 outcome=failure
 response=
