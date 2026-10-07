@@ -1,0 +1,35 @@
+{
+  "bare": {
+    "status": 400,
+    "body": "bad request: the Copilot-Integration-Id header does not match the GitHub App that issued this installation access token\n"
+  },
+  "editor-only": {
+    "status": 400,
+    "body": "bad request: the Copilot-Integration-Id header does not match the GitHub App that issued this installation access token\n"
+  },
+  "vscode-chat": {
+    "status": 400,
+    "body": "bad request: the Copilot-Integration-Id header does not match the GitHub App that issued this installation access token\n"
+  },
+  "editor-plugin": {
+    "status": 400,
+    "body": "bad request: the Copilot-Integration-Id header does not match the GitHub App that issued this installation access token\n"
+  },
+  "openai-intent": {
+    "status": 400,
+    "body": "bad request: the Copilot-Integration-Id header does not match the GitHub App that issued this installation access token\n"
+  },
+  "gh-actions": {
+    "status": 400,
+    "body": "bad request: the Copilot-Integration-Id header does not match the GitHub App that issued this installation access token\n"
+  },
+  "neutral": {
+    "status": 400,
+    "body": "bad request: the Copilot-Integration-Id header does not match the GitHub App that issued this installation access token\n"
+  },
+  "x-github": {
+    "status": 400,
+    "body": "bad request: error: invalid apiVersion\n"
+  },
+  "winners": []
+}
