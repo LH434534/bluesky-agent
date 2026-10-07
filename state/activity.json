@@ -71,5 +71,11 @@
     "ok": false,
     "reason": "waiting for peak",
     "at": "2026-10-07T13:39:16.836841Z"
+  },
+  {
+    "kind": "like",
+    "ok": true,
+    "to": "radiomotostorie.bsky.social",
+    "at": "2026-10-07T19:32:41.230989Z"
   }
 ]

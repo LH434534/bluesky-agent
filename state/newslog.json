@@ -30,5 +30,21 @@
       "kept": 267
     },
     "at": "2026-10-07T12:43:33.409342Z"
+  },
+  {
+    "ok": false,
+    "fetched": 267,
+    "clusters": 221,
+    "confirmed": 75,
+    "queued": false,
+    "reason": "no model available for role draft: pollinations: http 402: {}",
+    "sources": {
+      "gdelt_raw": 0,
+      "wikipedia_raw": 0,
+      "rss_raw": 275,
+      "hn_raw": 40,
+      "kept": 267
+    },
+    "at": "2026-10-07T19:36:08.128609Z"
   }
 ]
