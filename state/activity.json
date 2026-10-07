@@ -47,5 +47,17 @@
     "ok": true,
     "text": "Bancos centrais mantiveram juros. Inflacao esfriando muda calculo de quem segura caixa.",
     "at": "2026-10-06T21:59:58.191395Z"
+  },
+  {
+    "kind": "like",
+    "ok": true,
+    "to": "ddayen.bsky.social",
+    "at": "2026-10-07T06:19:45.014721Z"
+  },
+  {
+    "kind": "post",
+    "ok": false,
+    "reason": "waiting for peak",
+    "at": "2026-10-07T06:19:45.048278Z"
   }
 ]
