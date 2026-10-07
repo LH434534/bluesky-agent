@@ -69,6 +69,23 @@ def _gh_token() -> str:
     return _token()
 
 
+def token_diagnosis() -> str:
+    """Say plainly why a token cannot reach GitHub Models.
+
+    Classic PATs (ghp_) are rejected by Copilot and by models.github.ai,
+    which answers them with a bare 200 "OK" that parses as nothing.
+    """
+    t = _token()
+    if not t:
+        return "sem GITHUB_TOKEN"
+    if t.startswith("ghp_"):
+        return ("classic PAT (ghp_) — Copilot e GitHub Models exigem "
+                "fine-grained PAT com permissao models:read")
+    if t.startswith("github_pat_"):
+        return "fine-grained PAT — ok"
+    return "token de instalacao — ok se o workflow tem models: read"
+
+
 POLLI_MODELS = ["openai", "openai-large", "qwen-coder", "mistral", "llama"]
 
 
@@ -169,4 +186,5 @@ def complete(system: str, user: str, model: str, temperature: float = 0.9) -> st
 
 def status() -> dict:
     return {"provider": provider(),
+            "token": token_diagnosis(),
             "at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")}
