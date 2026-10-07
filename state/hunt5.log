@@ -1,0 +1,38 @@
+TOKEN_PREFIX=ghp_
+--- gh-models install ---
+--- gh models list ---
+Error: invalid character 'O' looking for beginning of value
+Usage:
+  gh models list [flags]
+
+Flags:
+  -h, --help   help for list
+
+--- gh models run (correct syntax) ---
+Error: invalid character 'O' looking for beginning of value
+Usage:
+  gh models run [model] [prompt] [flags]
+
+Examples:
+gh models run openai/gpt-4o-mini "how many types of hyena are there?"
+gh models run --org my-org openai/gpt-4o-mini "how many types of hyena are there?"
+gh models run --file prompt.yml --var name=Alice --var topic="machine learning"
+
+
+Flags:
+      --file string            Path to a .prompt.yml file.
+--- direct POST user token ---
+HTTP/2 200 
+content-type: text/plain
+
+OK
+--- copilot cli ---
+✓ Copilot CLI installed successfully
+error: Invalid command format.
+
+It looks like your prompt was not quoted, so the extra words were treated as separate arguments.
+Wrap the prompt in quotes, for example: copilot -p "your prompt here"
+
+Try 'copilot --help' for more information.
+--- ai-inference action token scope probe ---
+catalog=200
