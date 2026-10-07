@@ -10,41 +10,41 @@ permissions:
 jobs:
   copilot:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: copilot token exchange
+
+      - name: gh CLI + gh-models extension
         env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python -m src.hunt3 2>&1 | tee state/hunt3.log
+        run: |
+          set +e
+          mkdir -p state
+          {
+            echo "=== gh version ==="
+            gh --version 2>&1 | head -2
+            echo "=== install gh-models ==="
+            gh extension install github/gh-models 2>&1 | tail -5
+            echo "exit=$?"
+            echo "=== gh models list ==="
+            gh models list 2>&1 | head -20
+            echo "=== gh models run ==="
+            gh models run openai/gpt-4o-mini --prompt "Reply with exactly: rat-alive" 2>&1 | head -20
+            echo "=== gh models run (no org slash) ==="
+            gh models run gpt-4o-mini --prompt "Reply with exactly: rat-alive" 2>&1 | head -20
+            echo "=== gh copilot suggest ==="
+            echo "list files" | gh copilot suggest -t shell 2>&1 | head -15
+          } 2>&1 | tee -a state/hunt3.log
 
       - name: copilot header shapes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python -m src.hunt4 2>&1 | tee -a state/hunt3.log
-
-      - name: official ai-inference action
-        id: ai
-        uses: actions/ai-inference@v1
-        continue-on-error: true
-        with:
-          prompt: "Reply with exactly: rat-alive"
-          model: openai/gpt-4o-mini
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: capture action output
-        run: |
-          mkdir -p state
-          {
-            echo "=== ai-inference action ==="
-            echo "outcome: ${{ steps.ai.outcome }}"
-            echo "response: ${{ steps.ai.outputs.response }}"
-            echo "error: ${{ steps.ai.outputs.error }}"
-          } 2>&1 | tee -a state/hunt3.log
 
       - name: commit findings
         run: |
