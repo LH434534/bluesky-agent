@@ -69,14 +69,32 @@ def _gh_token() -> str:
     return _token()
 
 
+POLLI_MODELS = ["openai", "openai-large", "qwen-coder", "mistral", "llama"]
+
+
 def _pollinations(model: str, system: str, user: str, temperature: float) -> str:
-    """Keyless OpenAI-compatible endpoint. Last resort, but it writes."""
-    body = _post(f"{POLLINATIONS}/chat/completions",
-                 {"model": model or "openai", "temperature": temperature,
-                  "messages": [{"role": "system", "content": system},
-                               {"role": "user", "content": user}]},
-                 "")
-    return _extract(body)
+    """Keyless OpenAI-compatible endpoint. Last resort, but it writes.
+
+    Its model names are its own; a GitHub-style id like 'openai/gpt-4o-mini'
+    404s. Try the short names until one answers.
+    """
+    want = (model or "").lower()
+    order = [m for m in POLLI_MODELS if want.startswith(m)] or POLLI_MODELS
+    order = order + [m for m in POLLI_MODELS if m not in order]
+    last = ""
+    for name in order:
+        try:
+            body = _post(f"{POLLINATIONS}/chat/completions",
+                         {"model": name, "temperature": temperature,
+                          "messages": [{"role": "system", "content": system},
+                                       {"role": "user", "content": user}]}, "")
+            out = _extract(body)
+            if out:
+                _STATE["pollinations_model"] = name
+                return out
+        except ProviderError as e:
+            last = str(e)
+    raise ProviderError(f"pollinations: {last}"[:200])
 
 
 def probe() -> str:
@@ -113,7 +131,7 @@ def probe() -> str:
             pass
 
     try:
-        out = _pollinations("openai", "be terse", "say ok", 0.1)
+        out = _pollinations("", "be terse", "say ok", 0.1)
         if out:
             _STATE.update({"provider": "pollinations", "checked": True})
             return "pollinations"
