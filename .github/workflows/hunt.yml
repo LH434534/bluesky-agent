@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: round 5
+      - name: round 6 — copilot cli
         env:
           GH_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
@@ -22,35 +22,42 @@ jobs:
           set +e
           mkdir -p state
           {
-            echo "TOKEN_PREFIX=${GH_TOKEN:0:4}"
-            echo "--- gh-models install ---"
-            gh extension install github/gh-models 2>&1 | tail -3
-            echo "--- gh models list ---"
-            gh models list 2>&1 | head -12
-            echo "--- gh models run (correct syntax) ---"
-            gh models run openai/gpt-4o-mini "Reply with exactly: rat-alive" 2>&1 | head -12
-            echo "--- direct POST user token ---"
-            curl -sS -i -m 30 -X POST \
-              -H "Authorization: Bearer ${GH_TOKEN}" \
-              -H "Content-Type: application/json" \
-              -d '{"model":"openai/gpt-4o-mini","messages":[{"role":"user","content":"say: rat-alive"}],"max_tokens":20}' \
-              https://models.github.ai/inference/chat/completions 2>&1 | head -20
-            echo "--- copilot cli ---"
-            gh copilot suggest -p "Reply with exactly: rat-alive" 2>&1 | head -15
-            echo "--- ai-inference action token scope probe ---"
-            curl -sS -o /dev/null -w "catalog=%{http_code}\n" -m 20 \
-              -H "Authorization: Bearer ${GH_TOKEN}" \
-              https://models.github.ai/catalog/models
-          } > state/hunt5.log 2>&1
-          cat state/hunt5.log
+            echo "--- copilot help ---"
+            gh copilot --help 2>&1 | head -20
+            echo "--- form A: quoted single word ---"
+            gh copilot suggest -p "rat-alive" 2>&1 | head -10
+            echo "--- form B: -i flag ---"
+            gh copilot suggest -i "rat-alive" 2>&1 | head -10
+            echo "--- form C: bare copilot -p ---"
+            copilot -p "rat-alive" 2>&1 | head -10
+            echo "--- form D: explain ---"
+            gh copilot explain "ls" 2>&1 | head -10
+            echo "--- form E: ai-inference action ---"
+          } > state/hunt6.log 2>&1
+          cat state/hunt6.log
+
+      - name: ai-inference action
+        id: ai
+        uses: actions/ai-inference@v1
+        continue-on-error: true
+        with:
+          prompt: "Reply with exactly: rat-alive"
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: capture ai action
+        run: |
+          {
+            echo "outcome=${{ steps.ai.outcome }}"
+            echo "response=${{ steps.ai.outputs.response }}"
+          } >> state/hunt6.log 2>&1
+          cat state/hunt6.log
 
       - name: commit findings
         run: |
           git config user.name "ratman4080"
           git config user.email "bot@nest.local"
-          git add state/hunt5.log
+          git add state/hunt6.log
           if git diff --cached --quiet; then echo "no change"; else
-            git commit -m "hunt: round5 [skip ci]"
+            git commit -m "hunt: round6 [skip ci]"
             git pull --rebase --autostash origin ${GITHUB_REF_NAME} || true
             git push || (git pull --rebase origin ${GITHUB_REF_NAME} && git push)
           fi
