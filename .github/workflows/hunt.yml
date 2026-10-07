@@ -24,14 +24,14 @@ jobs:
           {
             echo "--- copilot help ---"
             gh copilot --help 2>&1 | head -20
-            echo "--- form A: quoted single word ---"
-            gh copilot suggest -p "rat-alive" 2>&1 | head -10
-            echo "--- form B: -i flag ---"
-            gh copilot suggest -i "rat-alive" 2>&1 | head -10
-            echo "--- form C: bare copilot -p ---"
-            copilot -p "rat-alive" 2>&1 | head -10
-            echo "--- form D: explain ---"
-            gh copilot explain "ls" 2>&1 | head -10
+            echo "--- form A: gh copilot -- -p ---"
+            gh copilot -- -p "Reply with exactly: rat-alive" 2>&1 | head -20
+            echo "--- form B: gh copilot -- --prompt ---"
+            gh copilot -- --prompt "Reply with exactly: rat-alive" 2>&1 | head -20
+            echo "--- form C: gh copilot suggest -- -p ---"
+            gh copilot suggest -- -p "Reply with exactly: rat-alive" 2>&1 | head -20
+            echo "--- form D: gh copilot -- --help ---"
+            gh copilot -- --help 2>&1 | head -30
             echo "--- form E: ai-inference action ---"
           } > state/hunt6.log 2>&1
           cat state/hunt6.log
