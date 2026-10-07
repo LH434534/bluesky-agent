@@ -18,27 +18,26 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
 
-      - name: gh CLI + gh-models extension
+      - name: gh CLI + gh-models with USER token
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
         run: |
           set +e
           mkdir -p state
           {
-            echo "=== gh version ==="
-            gh --version 2>&1 | head -2
             echo "=== install gh-models ==="
-            gh extension install github/gh-models 2>&1 | tail -5
-            echo "exit=$?"
-            echo "=== gh models list ==="
-            gh models list 2>&1 | head -20
-            echo "=== gh models run ==="
-            gh models run openai/gpt-4o-mini --prompt "Reply with exactly: rat-alive" 2>&1 | head -20
-            echo "=== gh models run (no org slash) ==="
-            gh models run gpt-4o-mini --prompt "Reply with exactly: rat-alive" 2>&1 | head -20
-            echo "=== gh copilot suggest ==="
-            echo "list files" | gh copilot suggest -t shell 2>&1 | head -15
+            gh extension install github/gh-models 2>&1 | tail -3
+            echo "=== gh models list (user token) ==="
+            gh models list 2>&1 | head -25
+            echo "=== gh models run (user token, correct syntax) ==="
+            gh models run openai/gpt-4o-mini "Reply with exactly: rat-alive" 2>&1 | head -25
+            echo "=== direct POST with user token ==="
+            curl -sS -i -m 30 -X POST \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "Content-Type: application/json" \
+              -d '{"model":"openai/gpt-4o-mini","messages":[{"role":"user","content":"say: rat-alive"}],"max_tokens":20}' \
+              https://models.github.ai/inference/chat/completions 2>&1 | head -25
           } 2>&1 | tee -a state/hunt3.log
 
       - name: copilot header shapes
