@@ -1,0 +1,10 @@
+account: {}
+exchange_ok: False
+  404   exchange                                                       {"documentation_url":"https://docs.github.com/rest","message":"Not Found","status":"404"} 
+  400   https://api.githubcopilot.com/chat/completions                 bad request: the Copilot-Integration-Id header does not match the GitHub App that issued this installation acc
+  404   https://copilot-proxy.githubusercontent.com/v1/chat/completi   404 page not found 
+  200   ratelimit                                                      {"resources":{"core":{"limit":5000,"used":0,"remaining":5000,"reset":1791383597},"search":{"limit":30,"used":0
+=== ai-inference action ===
+outcome: failure
+response: 
+error: 

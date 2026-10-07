@@ -1,0 +1,27 @@
+{
+  "token_prefix": "ghs_",
+  "steps": {
+    "exchange": {
+      "status": 404,
+      "ctype": "application/json",
+      "body": "{\"documentation_url\":\"https://docs.github.com/rest\",\"message\":\"Not Found\",\"status\":\"404\"}\n"
+    },
+    "https://api.githubcopilot.com/chat/completions": {
+      "status": 400,
+      "ctype": "text/plain; charset=utf-8",
+      "body": "bad request: the Copilot-Integration-Id header does not match the GitHub App that issued this installation access token\n"
+    },
+    "https://copilot-proxy.githubusercontent.com/v1/chat/completions": {
+      "status": 404,
+      "ctype": "text/plain; charset=utf-8",
+      "body": "404 page not found\n"
+    },
+    "ratelimit": {
+      "status": 200,
+      "ctype": "application/json; charset=utf-8",
+      "body": "{\"resources\":{\"core\":{\"limit\":5000,\"used\":0,\"remaining\":5000,\"reset\":1791383597},\"search\":{\"limit\":30,\"used\":0,\"remaining\":30,\"reset\":1791380057},\"graphql\":{\"limit\":5000,\"used\":0,\"remaining\":5000,\"reset\":1791383597},\"integration_manifest\":{\"limit\":5000,\"used\":0,\"remaining\":5000,\"reset\":1791383597},\""
+    }
+  },
+  "account": {},
+  "exchange_ok": false
+}
