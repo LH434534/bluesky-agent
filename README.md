@@ -131,6 +131,26 @@ Sete workflows no ar:
 
 Kill switch: crie `state/STOP` e nada executa. Apague e retoma.
 
+## Por que o modelo nao fala (e como resolver)
+
+Diagnosticado de dentro do runner, com o token do usuario:
+
+```
+models.github.ai/qualquer/caminho  200  "OK"      <- stub
+gh models list                     erro de parse ("O")
+gh copilot -- -p "oi"              erro: classic PAT nao suportado
+api.githubcopilot.com              400: integration id nao corresponde
+```
+
+**Causa:** o token em uso e um **classic PAT (`ghp_`)**. GitHub Models e Copilot
+aceitam apenas **fine-grained PAT** com permissao `models: read`. Classic PAT
+recebe um `200 OK` de texto puro que nao e resposta de modelo nenhum.
+
+**Como resolver:** crie em
+<https://github.com/settings/personal-access-tokens>
+um fine-grained token com `Models: read`, e grave como secret `GH_MODELS_TOKEN`.
+Nada mais precisa mudar — `src/llm.py` detecta e usa automaticamente.
+
 ## Setup
 
 ### 0. Valide antes de tudo (30 segundos)
