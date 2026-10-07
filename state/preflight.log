@@ -1,6 +1,6 @@
-=== preflight 2026-10-07T02:02:49Z ===
+=== preflight 2026-10-07T02:06:26Z ===
 handle=[lh434534.github.io] pds=[https://bsky.social]
-autonomy=[2] run=37560065595
+autonomy=[2] run=37560359588
 
 --- preflight ---
 ================================================================
@@ -8,7 +8,7 @@ PREFLIGHT
 ================================================================
   handle  lh434534.github.io
   app pw  jy4************w2ip
-  gh tok  ghs**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************qqKg
+  gh tok  ghs**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************Thqw
   pds     https://bsky.social
 
 IDENTIDADE
@@ -28,17 +28,17 @@ rode primeiro: DRY_RUN=1 python -m src.act_run
 preflight_exit=0
 
 --- news smoke ---
-  "fetched": 287,
-  "clusters": 232,
+  "fetched": 275,
+  "clusters": 221,
   "confirmed": 83,
   "queued": true,
   "reason": "",
   "sources": {
-    "gdelt_raw": 75,
+    "gdelt_raw": 0,
     "wikipedia_raw": 0,
     "rss_raw": 284,
     "hn_raw": 40,
-    "kept": 287
+    "kept": 275
   },
   "text": "OpenAI admits misstep in handling AI agent interactions with Australian government sites – video (bbc)",
   "headline": "OpenAI admits misstep in handling AI agent interactions with Australian government sites – video",
@@ -51,7 +51,7 @@ preflight_exit=0
 news_exit=0
 
 --- llm provider ---
-{'provider': 'none', 'at': '2026-10-07T02:04:41.226565Z'}
+{'provider': 'none', 'at': '2026-10-07T02:08:11.036066Z'}
 --- net probe ---
   200   https://public.api.bsky.app/xrpc/_health                         
   429   https://api.gdeltproject.org/api/v2/doc/doc?query=x&mode=ArtLi   Please limit requests to one every 5 seconds or co
@@ -67,10 +67,10 @@ OK
 
 --- curl raw (pollinations) ---
 HTTP/2 402 
-date: Wed, 07 Oct 2026 02:04:57 GMT
+date: Wed, 07 Oct 2026 02:08:24 GMT
 content-type: application/json; charset=utf-8
 content-length: 2
-cf-ray: a4695683cc40c3a1-SEA
+cf-ray: a4695b919f9fe608-IAD
 cf-cache-status: DYNAMIC
 access-control-allow-origin: *
 cache-control: no-store
@@ -109,9 +109,9 @@ OPEN PROVIDERS:
   401   openrouter-free  {"error":{"message":"Missing Authentication header","code":401}}
   0     hf-inference     
   401   groq             {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"inv
-  401   together         {   "id": "p4DU6np-2kFHot-a46956bafe22ba4e",   "error": {     "message": "Invali
+  401   together         {   "id": "p4DV8dF-2kFHot-a4695ba53eb97afc",   "error": {     "message": "Invali
   401   mistral          {"detail":"Invalid API Key"} 
-  401   cohere           {"id":"e8f1ea25-32f3-4c87-8f7e-eff247a64c3d","message":"Incorrect API key provid
+  401   cohere           {"id":"c6892283-8168-46af-82cb-f18dc12af87d","message":"Incorrect API key provid
   0     ollama-local     
 
 CURL: HTTP/2 200 
@@ -146,13 +146,13 @@ OK
   200   https://models.github.ai/inference/chat/completions/ [short-id]    OK 
 
 OPEN PROVIDERS:
-  404   pollinations     {"error":"Model not found: openai/gpt-4o-mini. This is our legacy API - for the 
+  402   pollinations     {}
   401   openrouter-free  {"error":{"message":"Missing Authentication header","code":401}}
   0     hf-inference     
   401   groq             {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"inv
-  401   together         {   "id": "p4DU966-2kFHot-a46956ec2a9188f9",   "error": {     "message": "Invali
+  401   together         {   "id": "p4DV9J6-2kFHot-a4695bb3fd18c9b5",   "error": {     "message": "Invali
   401   mistral          {"detail":"Invalid API Key"} 
-  401   cohere           {"id":"e3393b61-2f08-46c5-ae8f-4b6dce4d43ba","message":"Incorrect API key provid
+  401   cohere           {"id":"2df797cf-b43d-44cd-80c3-6e93f7f56115","message":"Incorrect API key provid
   0     ollama-local     
 
 CURL: HTTP/2 200 
@@ -160,6 +160,8 @@ content-type: text/plain
 
 OK
 
+--- hunt2: stub or real ---
+/opt/hostedtoolcache/Python/3.12.14/x64/bin/python: No module named src.hunt2
 --- model catalog probe ---
 no-redirect: {"status": 200, "url": "https://models.github.ai/inference/chat/completions", "body": "OK\r\n"}
   messages+temp          status=200 body='OK\r\n'
@@ -170,6 +172,7 @@ catalog: {"error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"}
 --- dry run session ---
 {
   "ran": [
+    "like",
     "post"
   ],
   "skipped": [],
@@ -182,10 +185,10 @@ catalog: {"error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"}
     0.0,
     0.0,
     0.0,
-    0.17,
-    0.0
+    0.0,
+    0.17
   ],
   "llm": "none",
-  "acted": 1
+  "acted": 2
 }
 act_exit=0
