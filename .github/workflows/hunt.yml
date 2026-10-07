@@ -13,12 +13,8 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - run: pip install -r requirements.txt
 
-      - name: gh CLI + gh-models with USER token
+      - name: round 5
         env:
           GH_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
@@ -26,32 +22,35 @@ jobs:
           set +e
           mkdir -p state
           {
-            echo "=== install gh-models ==="
+            echo "TOKEN_PREFIX=${GH_TOKEN:0:4}"
+            echo "--- gh-models install ---"
             gh extension install github/gh-models 2>&1 | tail -3
-            echo "=== gh models list (user token) ==="
-            gh models list 2>&1 | head -25
-            echo "=== gh models run (user token, correct syntax) ==="
-            gh models run openai/gpt-4o-mini "Reply with exactly: rat-alive" 2>&1 | head -25
-            echo "=== direct POST with user token ==="
+            echo "--- gh models list ---"
+            gh models list 2>&1 | head -12
+            echo "--- gh models run (correct syntax) ---"
+            gh models run openai/gpt-4o-mini "Reply with exactly: rat-alive" 2>&1 | head -12
+            echo "--- direct POST user token ---"
             curl -sS -i -m 30 -X POST \
               -H "Authorization: Bearer ${GH_TOKEN}" \
               -H "Content-Type: application/json" \
               -d '{"model":"openai/gpt-4o-mini","messages":[{"role":"user","content":"say: rat-alive"}],"max_tokens":20}' \
-              https://models.github.ai/inference/chat/completions 2>&1 | head -25
-          } 2>&1 | tee -a state/hunt3.log
-
-      - name: copilot header shapes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python -m src.hunt4 2>&1 | tee -a state/hunt3.log
+              https://models.github.ai/inference/chat/completions 2>&1 | head -20
+            echo "--- copilot cli ---"
+            gh copilot suggest -p "Reply with exactly: rat-alive" 2>&1 | head -15
+            echo "--- ai-inference action token scope probe ---"
+            curl -sS -o /dev/null -w "catalog=%{http_code}\n" -m 20 \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              https://models.github.ai/catalog/models
+          } > state/hunt5.log 2>&1
+          cat state/hunt5.log
 
       - name: commit findings
         run: |
           git config user.name "ratman4080"
           git config user.email "bot@nest.local"
-          git add state/
+          git add state/hunt5.log
           if git diff --cached --quiet; then echo "no change"; else
-            git commit -m "hunt: findings [skip ci]"
+            git commit -m "hunt: round5 [skip ci]"
             git pull --rebase --autostash origin ${GITHUB_REF_NAME} || true
             git push || (git pull --rebase origin ${GITHUB_REF_NAME} && git push)
           fi
