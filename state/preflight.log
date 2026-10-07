@@ -1,6 +1,6 @@
-=== preflight 2026-10-07T13:33:09Z ===
+=== preflight 2026-10-07T13:37:14Z ===
 handle=[lh434534.github.io] pds=[https://bsky.social]
-autonomy=[2] run=37629371073
+autonomy=[2] run=37629925824
 
 --- preflight ---
 ================================================================
@@ -8,7 +8,7 @@ PREFLIGHT
 ================================================================
   handle  lh434534.github.io
   app pw  jy4************w2ip
-  gh tok  ghs**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************Y5iA
+  gh tok  ghs**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************2mcA
   pds     https://bsky.social
 
 IDENTIDADE
@@ -28,20 +28,20 @@ rode primeiro: DRY_RUN=1 python -m src.act_run
 preflight_exit=0
 
 --- news smoke ---
-  "fetched": 270,
-  "clusters": 224,
-  "confirmed": 75,
+  "fetched": 260,
+  "clusters": 215,
+  "confirmed": 66,
   "queued": true,
   "reason": "no model available for role draft: pollinations: http 402: {}",
   "sources": {
     "gdelt_raw": 0,
     "wikipedia_raw": 0,
-    "rss_raw": 277,
+    "rss_raw": 267,
     "hn_raw": 40,
-    "kept": 270
+    "kept": 260
   },
-  "text": "In Madrid, housing activists at an encampment hold up banners that read “Now is the moment”, hoping the early election will finally address the rental crisis.",
-  "headline": "‘Now is the moment’: housing activists at Madrid encampment pin wary hopes on Spain’s early election",
+  "text": "Ofcom is probing Meta for Instagram Instants safety checks. It's the first time a regulator is digging into how a platform vets user‑generated content. If the checks fall short, users could be exposed to harmful material.",
+  "headline": "Ofcom investigates Meta over Instagram Instants safety checks",
   "domains": [
     "bbc.co.uk",
     "theguardian.com"
@@ -51,8 +51,9 @@ preflight_exit=0
 news_exit=0
 
 --- llm provider ---
-{'provider': 'pollinations', 'at': '2026-10-07T13:35:45.376602Z'}
+{'provider': 'pollinations', 'at': '2026-10-07T13:39:51.918603Z'}
 --- net probe ---
+HTTP/2 200 
 content-type: text/plain
 
 OK
@@ -60,24 +61,23 @@ OK
 
 --- curl raw (pollinations) ---
 HTTP/2 200 
-date: Wed, 07 Oct 2026 13:36:02 GMT
+date: Wed, 07 Oct 2026 13:40:06 GMT
 content-type: application/json; charset=utf-8
 content-length: 491
-cf-ray: a46d4ace2a924660-DFW
-cf-cache-status: DYNAMIC
 access-control-allow-origin: *
-etag: W/"1eb-RMuaVr0AJfEL6sObase7uAgKqgU"
 link: <https://pollinations.ai>; rel="service"
-server: cloudflare
+access-control-allow-headers: Content-Type, X-Turnstile-Token, Payment-Signature, X-PAYMENT
+access-control-allow-methods: GET, POST, OPTIONS
+access-control-expose-headers: Link, X-Pollinations-Logo, X-Powered-By
+x-cache: HIT
+x-cache-date: 2026-10-07T13:36:02.429Z
+x-cache-key: 04b0e3de8141b678fe64cd9928297643962350da91ec009250bc62be6ee4ab0d
 x-pollinations-logo: https://raw.githubusercontent.com/pollinations/pollinations/main/packages/ui/src/brand/lockup-horizontal-black.svg
-access-control-expose-headers: Payment-Required, Payment-Response, Link, X-Pollinations-Logo, X-Powered-By
-x-model-used: gpt-oss-20b
 x-powered-by: Pollinations.AI
-x-usage-completion-text-tokens: 48
-x-usage-prompt-text-tokens: 310
-x-usage-total-tokens: 358
+server: cloudflare
+cf-ray: a46d50d179865769-ORD
 
-{"id":"pllns_6eac0f7d672d13c01f4044af9bddfdd9","choices":[{"index":0,"message":{"role":"assistant","content":"Ok.","reasoning":"User says \"say ok\". They want me to respond with \"ok\". But guidelines: I should respond appropriately. They just want me to say \"ok\". I can comply.","tool_calls":[]},"finish_reason":"stop"}],"created":1791380160,"model":"gpt-oss-20b","object":"chat.completion","usage":{"prompt_tokens":310,"completion_tokens":48,"total_tokens":358},"user_tier":"anonymous"}
+{"id":"pllns_20e1bc470d43d65fd1ec0a884a77142a","choices":[{"index":0,"message":{"role":"assistant","content":"Ok.","reasoning":"User says \"say ok\". They want me to respond with \"ok\". But guidelines: I should respond appropriately. They just want me to say \"ok\". I can comply.","tool_calls":[]},"finish_reason":"stop"}],"created":1791380160,"model":"gpt-oss-20b","object":"chat.completion","usage":{"prompt_tokens":310,"completion_tokens":48,"tot
 --- endpoint hunt ---
   200   https://models.github.ai/inference/v1/chat/completions [bearer+a   OK 
   200   https://models.github.ai/inference/v1/chat/completions [bearer+p   OK 
@@ -109,9 +109,9 @@ OPEN PROVIDERS:
   401   openrouter-free  {"error":{"message":"Missing Authentication header","code":401}}
   0     hf-inference     
   401   groq             {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"inv
-  401   together         {   "id": "p4H8cNt-2kFHot-a46d4b04bf681ccf",   "error": {     "message": "Invali
+  401   together         {   "id": "p4H9rFN-2kFHot-a46d50ea9af2f571",   "error": {     "message": "Invali
   401   mistral          {"detail":"Invalid API Key"} 
-  401   cohere           {"id":"3e4d764c-d1e0-4b2a-a33d-4e0cdb3bcda4","message":"Incorrect API key provid
+  401   cohere           {"id":"5a507c19-a7be-4fdb-8e77-cc56fe308857","message":"Incorrect API key provid
   0     ollama-local     
 
 CURL: HTTP/2 200 
@@ -150,9 +150,9 @@ OPEN PROVIDERS:
   401   openrouter-free  {"error":{"message":"Missing Authentication header","code":401}}
   0     hf-inference     
   401   groq             {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"inv
-  401   together         {   "id": "p4H8eL7-2kFHot-a46d4b2e3b8b6707",   "error": {     "message": "Invali
+  401   together         {   "id": "p4H9sYn-2kFHot-a46d5107a88883b9",   "error": {     "message": "Invali
   401   mistral          {"detail":"Invalid API Key"} 
-  401   cohere           {"id":"7d19a3dc-5135-4de2-8161-f3eb4832f8ef","message":"Incorrect API key provid
+  401   cohere           {"id":"4a0321f4-e5d6-4381-a358-67c8a665d0e8","message":"Incorrect API key provid
   0     ollama-local     
 
 CURL: HTTP/2 200 
