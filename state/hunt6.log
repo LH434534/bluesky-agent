@@ -1,0 +1,48 @@
+--- copilot help ---
+Runs the GitHub Copilot CLI.
+
+Executing the Copilot CLI through `gh` is currently in preview and subject to change.
+
+If already installed, `gh` will execute the Copilot CLI found in your `PATH`.
+If the Copilot CLI is not installed, it will be downloaded to /home/runner/.local/share/gh/copilot.
+
+Use `--remove` to remove the downloaded Copilot CLI.
+
+This command is only supported on Windows, Linux, and Darwin, on amd64/x64
+or arm64 architectures.
+
+To prevent `gh` from interpreting flags intended for Copilot,
+use `--` before Copilot flags and args.
+
+Learn more at https://gh.io/copilot-cli
+
+
+USAGE
+  gh copilot [flags] [args]
+--- form A: quoted single word ---
+✓ Copilot CLI installed successfully
+error: Invalid command format.
+
+It looks like your prompt was not quoted, so the extra words were treated as separate arguments.
+Wrap the prompt in quotes, for example: copilot -p "your prompt here"
+
+Try 'copilot --help' for more information.
+--- form B: -i flag ---
+error: Invalid command format.
+
+It looks like your prompt was not quoted, so the extra words were treated as separate arguments.
+Wrap the prompt in quotes, for example: copilot -p "your prompt here"
+
+Try 'copilot --help' for more information.
+--- form C: bare copilot -p ---
+/home/runner/work/_temp/116c2766-846f-4aa6-a2a4-88bef304328e.sh: line 11: copilot: command not found
+--- form D: explain ---
+error: Invalid command format.
+
+Did you mean: copilot -i "explain ls"?
+
+For non-interactive mode, use the -p or --prompt option.
+Try 'copilot --help' for more information.
+--- form E: ai-inference action ---
+outcome=failure
+response=
