@@ -89,3 +89,47 @@ Try 'copilot --help' for more information.
   400   neutral          bad request: the Copilot-Integration-Id header does not match the GitHub App that issued this installation access token 
   400   x-github         bad request: error: invalid apiVersion 
 winners: []
+=== install gh-models ===
+=== gh models list (user token) ===
+Error: invalid character 'O' looking for beginning of value
+Usage:
+  gh models list [flags]
+
+Flags:
+  -h, --help   help for list
+
+=== gh models run (user token, correct syntax) ===
+Error: invalid character 'O' looking for beginning of value
+Usage:
+  gh models run [model] [prompt] [flags]
+
+Examples:
+gh models run openai/gpt-4o-mini "how many types of hyena are there?"
+gh models run --org my-org openai/gpt-4o-mini "how many types of hyena are there?"
+gh models run --file prompt.yml --var name=Alice --var topic="machine learning"
+
+
+Flags:
+      --file string            Path to a .prompt.yml file.
+  -h, --help                   help for run
+      --max-tokens string      Limit the maximum tokens for the model response.
+      --org string             Organization to attribute usage to (omitting will attribute usage to the current actor
+      --system-prompt string   Prompt the system.
+      --temperature string     Controls randomness in the response, use lower to be more deterministic.
+      --top-p string           Controls text diversity by selecting the most probable words until a set probability is reached.
+      --var stringArray        Template variables for prompt files (can be used multiple times: --var name=value)
+
+=== direct POST with user token ===
+HTTP/2 200 
+content-type: text/plain
+
+OK
+  400   bare             bad request: the Copilot-Integration-Id header does not match the GitHub App that issued this installation access token 
+  400   editor-only      bad request: the Copilot-Integration-Id header does not match the GitHub App that issued this installation access token 
+  400   vscode-chat      bad request: the Copilot-Integration-Id header does not match the GitHub App that issued this installation access token 
+  400   editor-plugin    bad request: the Copilot-Integration-Id header does not match the GitHub App that issued this installation access token 
+  400   openai-intent    bad request: the Copilot-Integration-Id header does not match the GitHub App that issued this installation access token 
+  400   gh-actions       bad request: the Copilot-Integration-Id header does not match the GitHub App that issued this installation access token 
+  400   neutral          bad request: the Copilot-Integration-Id header does not match the GitHub App that issued this installation access token 
+  400   x-github         bad request: error: invalid apiVersion 
+winners: []
