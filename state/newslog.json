@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "ok": false,
+    "fetched": 300,
+    "clusters": 245,
+    "confirmed": 82,
+    "queued": false,
+    "reason": "no model available for role draft: pollinations: http 402: {}",
+    "sources": {
+      "gdelt_raw": 95,
+      "wikipedia_raw": 0,
+      "rss_raw": 283,
+      "hn_raw": 40,
+      "kept": 300
+    },
+    "at": "2026-10-07T04:27:35.505150Z"
+  }
+]

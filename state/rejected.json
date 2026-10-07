@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 402: {}",
+    "at": "2026-10-07T04:27:16.927304Z"
+  },
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 402: {}",
+    "at": "2026-10-07T04:27:35.504497Z"
+  }
+]
