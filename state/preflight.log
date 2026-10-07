@@ -1,6 +1,6 @@
-=== preflight 2026-10-07T02:06:26Z ===
+=== preflight 2026-10-07T13:33:09Z ===
 handle=[lh434534.github.io] pds=[https://bsky.social]
-autonomy=[2] run=37560359588
+autonomy=[2] run=37629371073
 
 --- preflight ---
 ================================================================
@@ -8,7 +8,7 @@ PREFLIGHT
 ================================================================
   handle  lh434534.github.io
   app pw  jy4************w2ip
-  gh tok  ghs**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************Thqw
+  gh tok  ghs**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************Y5iA
   pds     https://bsky.social
 
 IDENTIDADE
@@ -28,56 +28,56 @@ rode primeiro: DRY_RUN=1 python -m src.act_run
 preflight_exit=0
 
 --- news smoke ---
-  "fetched": 275,
-  "clusters": 221,
-  "confirmed": 83,
+  "fetched": 270,
+  "clusters": 224,
+  "confirmed": 75,
   "queued": true,
-  "reason": "",
+  "reason": "no model available for role draft: pollinations: http 402: {}",
   "sources": {
     "gdelt_raw": 0,
     "wikipedia_raw": 0,
-    "rss_raw": 284,
+    "rss_raw": 277,
     "hn_raw": 40,
-    "kept": 275
+    "kept": 270
   },
-  "text": "OpenAI admits misstep in handling AI agent interactions with Australian government sites – video (bbc)",
-  "headline": "OpenAI admits misstep in handling AI agent interactions with Australian government sites – video",
+  "text": "In Madrid, housing activists at an encampment hold up banners that read “Now is the moment”, hoping the early election will finally address the rental crisis.",
+  "headline": "‘Now is the moment’: housing activists at Madrid encampment pin wary hopes on Spain’s early election",
   "domains": [
     "bbc.co.uk",
     "theguardian.com"
   ],
-  "confidence": "multi-source+fact-only"
+  "confidence": "multi-source"
 }
 news_exit=0
 
 --- llm provider ---
-{'provider': 'none', 'at': '2026-10-07T02:08:11.036066Z'}
+{'provider': 'pollinations', 'at': '2026-10-07T13:35:45.376602Z'}
 --- net probe ---
-  200   https://public.api.bsky.app/xrpc/_health                         
-  429   https://api.gdeltproject.org/api/v2/doc/doc?query=x&mode=ArtLi   Please limit requests to one every 5 seconds or co
-  200   https://en.wikipedia.org/wiki/Main_Page                          
-  200   https://hn.algolia.com/api/v1/search?query=x&hitsPerPage=1       
-
---- curl raw (models) ---
-HTTP/2 200 
 content-type: text/plain
 
 OK
 
 
 --- curl raw (pollinations) ---
-HTTP/2 402 
-date: Wed, 07 Oct 2026 02:08:24 GMT
+HTTP/2 200 
+date: Wed, 07 Oct 2026 13:36:02 GMT
 content-type: application/json; charset=utf-8
-content-length: 2
-cf-ray: a4695b919f9fe608-IAD
+content-length: 491
+cf-ray: a46d4ace2a924660-DFW
 cf-cache-status: DYNAMIC
 access-control-allow-origin: *
-cache-control: no-store
-etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+etag: W/"1eb-RMuaVr0AJfEL6sObase7uAgKqgU"
+link: <https://pollinations.ai>; rel="service"
 server: cloudflare
-access-control-expose-headers: Payment-Required,Payment-Response
-payment-required: eyJ4NDAyVmVyc2lvbiI6MiwiZXJyb3IiOiJQYXltZW50IHJlcXVpcmVkIiwicmVzb3VyY2UiOnsidXJsIjoiaHR0cHM6Ly90ZXh0LW9yaWdpbi5wb2xsaW5hdGlvbnMuYWkvb3BlbmFpL2NoYXQvY29tcGxldGlvbnMiLCJkZXNjcmlwdGlvbiI6IkdlbmVyYXRlIG9uZSB0ZXh0IHJlc3BvbnNlIHdpdGggUG9sbGluYXRpb25zIiwibWltZVR5cGUiOiIiLCJzZXJ2aWNlTmFtZSI6IlBvbGxpbmF0aW9ucyBsZWdhY3kgdGV4dCIsInRhZ3MiOlsid2VmdDp0eXBlOmFwaSIsInRleHQiXX0sImFjY2VwdHMiOlt7InNjaGVtZSI6ImV4YWN0IiwibmV0d29yayI6ImVpcDE1NTo4NDUzIiwiYW1vdW50IjoiMTAwMDAiLCJhc3NldCI6IjB4ODMzNTg5ZkNENmVEYjZFMDhmNGM3QzMyRDRmNzFiNTRiZEEwMjkxMyIsInBheVRvIjoiMHhGMDRkYTk5OTk0NzQ1NDQxMGQyRGVjN2VFMDFjRDEzZjdGYUQ2ZmJFIiwibWF4VGltZW91dFNlY29uZHMiOjMwMCwiZXh0cmEiOnsibmFtZSI6IlVTRCBDb2luIiwidmVyc2lvbiI6IjIifX1dLCJleHRlbnNpb25zIjp7IndlZnQucHJvZHVjdCI6eyJpbmZvIjp7ImtpbmQiOiJhcGkifSwic2NoZW1hIjp7IiRzY2hlbWEiOiJodHRwczovL2pzb24tc2NoZW1hLm9yZy9kcmFmdC8yMDIwLTEyL
+x-pollinations-logo: https://raw.githubusercontent.com/pollinations/pollinations/main/packages/ui/src/brand/lockup-horizontal-black.svg
+access-control-expose-headers: Payment-Required, Payment-Response, Link, X-Pollinations-Logo, X-Powered-By
+x-model-used: gpt-oss-20b
+x-powered-by: Pollinations.AI
+x-usage-completion-text-tokens: 48
+x-usage-prompt-text-tokens: 310
+x-usage-total-tokens: 358
+
+{"id":"pllns_6eac0f7d672d13c01f4044af9bddfdd9","choices":[{"index":0,"message":{"role":"assistant","content":"Ok.","reasoning":"User says \"say ok\". They want me to respond with \"ok\". But guidelines: I should respond appropriately. They just want me to say \"ok\". I can comply.","tool_calls":[]},"finish_reason":"stop"}],"created":1791380160,"model":"gpt-oss-20b","object":"chat.completion","usage":{"prompt_tokens":310,"completion_tokens":48,"total_tokens":358},"user_tier":"anonymous"}
 --- endpoint hunt ---
   200   https://models.github.ai/inference/v1/chat/completions [bearer+a   OK 
   200   https://models.github.ai/inference/v1/chat/completions [bearer+p   OK 
@@ -109,9 +109,9 @@ OPEN PROVIDERS:
   401   openrouter-free  {"error":{"message":"Missing Authentication header","code":401}}
   0     hf-inference     
   401   groq             {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"inv
-  401   together         {   "id": "p4DV8dF-2kFHot-a4695ba53eb97afc",   "error": {     "message": "Invali
+  401   together         {   "id": "p4H8cNt-2kFHot-a46d4b04bf681ccf",   "error": {     "message": "Invali
   401   mistral          {"detail":"Invalid API Key"} 
-  401   cohere           {"id":"c6892283-8168-46af-82cb-f18dc12af87d","message":"Incorrect API key provid
+  401   cohere           {"id":"3e4d764c-d1e0-4b2a-a33d-4e0cdb3bcda4","message":"Incorrect API key provid
   0     ollama-local     
 
 CURL: HTTP/2 200 
@@ -150,9 +150,9 @@ OPEN PROVIDERS:
   401   openrouter-free  {"error":{"message":"Missing Authentication header","code":401}}
   0     hf-inference     
   401   groq             {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"inv
-  401   together         {   "id": "p4DV9J6-2kFHot-a4695bb3fd18c9b5",   "error": {     "message": "Invali
+  401   together         {   "id": "p4H8eL7-2kFHot-a46d4b2e3b8b6707",   "error": {     "message": "Invali
   401   mistral          {"detail":"Invalid API Key"} 
-  401   cohere           {"id":"2df797cf-b43d-44cd-80c3-6e93f7f56115","message":"Incorrect API key provid
+  401   cohere           {"id":"7d19a3dc-5135-4de2-8161-f3eb4832f8ef","message":"Incorrect API key provid
   0     ollama-local     
 
 CURL: HTTP/2 200 
@@ -172,23 +172,22 @@ catalog: {"error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"}
 --- dry run session ---
 {
   "ran": [
-    "like",
     "post"
   ],
   "skipped": [],
   "errors": 0,
-  "pool": 27,
+  "pool": 26,
   "top_scores": [
     0.0,
     0.0,
+    0.34,
     0.0,
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.17
+    0.0
   ],
-  "llm": "none",
-  "acted": 2
+  "llm": "pollinations",
+  "acted": 1
 }
 act_exit=0
