@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"google/gemini-nano-banana-2.1\",\"canonical_slug\":\"google/gemini-nano-banana-2.1-20261006\",\"hugging_face_id\":null,\"name\":\"Google: Nano Banana 2.1\",\"created\":1791300825,\"description\":\"Nan"
+    "body": "{\"data\":[{\"id\":\"anthropic/claude-haiku-5.5\",\"canonical_slug\":\"anthropic/claude-haiku-5.5-20261007\",\"hugging_face_id\":null,\"name\":\"Anthropic: Claude Haiku 5.5\",\"created\":1791397883,\"description\":\"Claud"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"gpt-oss:20b\",\"model\":\"gpt-oss:20b\",\"modified_at\":\"2025-08-05T00:00:00Z\",\"size\":13780162412,\"digest\":\"05afbac4bad6\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":n"
+    "body": "{\"models\":[{\"name\":\"glm-5.2\",\"model\":\"glm-5.2\",\"modified_at\":\"2026-06-16T08:00:00-07:00\",\"size\":0,\"digest\":\"f553240f6dc4\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":null,\"paramete"
   },
   "cloudflare": {
     "status": 0,
