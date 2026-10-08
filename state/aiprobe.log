@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"anthropic/claude-haiku-5.5\",\"canonical_slug\":\"anthropic/claude-haiku-5.5-20261007\",\"hugging_face_id\":null,\"name\":\"Anthropic: Claude Haiku 5.5\",\"created\":1791397883,\"description\":\"Claud"
+    "body": "{\"data\":[{\"id\":\"stepfun/step-5-preview\",\"canonical_slug\":\"stepfun/step-5-preview-20261008\",\"hugging_face_id\":null,\"name\":\"StepFun: Step 5 Preview\",\"created\":1791462849,\"description\":\"Step 5 Preview is"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"nemotron-3-super\",\"model\":\"nemotron-3-super\",\"modified_at\":\"2026-03-11T00:00:00Z\",\"size\":230500000000,\"digest\":\"da11955bb451\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\""
+    "body": "{\"models\":[{\"name\":\"deepseek-v4-pro:0813\",\"model\":\"deepseek-v4-pro:0813\",\"modified_at\":\"2026-08-13T08:00:00-07:00\",\"size\":892744322880,\"digest\":\"db976f1eacdd\",\"details\":{\"parent_model\":\"\",\"format\":\"\","
   },
   "cloudflare": {
     "status": 0,
