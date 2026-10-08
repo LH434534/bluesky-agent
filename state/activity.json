@@ -89,5 +89,11 @@
     "ok": false,
     "reason": "waiting for peak",
     "at": "2026-10-07T23:48:33.067483Z"
+  },
+  {
+    "kind": "post",
+    "ok": false,
+    "reason": "waiting for peak",
+    "at": "2026-10-08T10:28:56.570724Z"
   }
 ]
