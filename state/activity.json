@@ -95,5 +95,11 @@
     "ok": false,
     "reason": "waiting for peak",
     "at": "2026-10-08T10:28:56.570724Z"
+  },
+  {
+    "kind": "like",
+    "ok": true,
+    "to": "bloomberg.com",
+    "at": "2026-10-08T17:34:10.529063Z"
   }
 ]
