@@ -29,9 +29,9 @@ Traceback (most recent call last):
   File "/home/runner/work/bluesky-agent/bluesky-agent/src/compose.py", line 97, in run
     result = draft_once(cfg)
              ^^^^^^^^^^^^^^^
-  File "/home/runner/work/bluesky-agent/bluesky-agent/src/compose.py", line 68, in draft_once
-    verdict = brain.complete(
-              ^^^^^^^^^^^^^^^
+  File "/home/runner/work/bluesky-agent/bluesky-agent/src/compose.py", line 57, in draft_once
+    raw = brain.complete(
+          ^^^^^^^^^^^^^^^
   File "/home/runner/work/bluesky-agent/bluesky-agent/src/brain.py", line 15, in complete
     raise BrainError(str(e))
 src.llm.ProviderError: pollinations: http 402: {}
