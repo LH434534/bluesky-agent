@@ -20,5 +20,14 @@
     "confidence": "multi-source",
     "hash": "587bf2690857ea3f",
     "createdAt": "2026-10-09T16:51:44.007543Z"
+  },
+  {
+    "ok": true,
+    "text": "Um sistema simples não tem ponto único de falha, nem lógica que suga CPU, nem firmware que corra vulnerável. O roteador de 3 portas de 1997 ainda entrega 99,9 % uptime; a nuvem de micro‑serviços falha 20 %. Simplicidade = longevidade.",
+    "hash": "77419862b443cca0",
+    "topic": "why simple systems outlive clever ones",
+    "verdict": "PASS: concrete details, specific numbers, no filler, no marketing language, Portuguese, under 300 chars.",
+    "model": "openai/gpt-4o-mini",
+    "createdAt": "2026-10-09T18:18:49.572548Z"
   }
 ]
