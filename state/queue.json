@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "ok": true,
+    "text": "3h da manhã, 100ml de café, 27mm de broca de 1,6cm. Coloquei 2m de cabo RJ45 num duto de PVC sem luz. Torque 0,8Nm na placa, uso régua de dobras. Falha: fio queimou. Substituí‑o por 1,5W, tudo gira. O silêncio ajuda.",
+    "hash": "03c94086447b7440",
+    "topic": "building things at 3am and why it works",
+    "verdict": "PASS\n\nThe post meets all criteria: concise, concrete details, no filler or marketing tone.",
+    "model": "openai/gpt-4o-mini",
+    "createdAt": "2026-10-09T10:24:44.246994Z"
+  }
+]
