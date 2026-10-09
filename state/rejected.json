@@ -108,5 +108,15 @@
     "ok": false,
     "reason": "no model available for role draft: pollinations: http 402: {}",
     "at": "2026-10-08T22:28:59.418533Z"
+  },
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 402: {}",
+    "at": "2026-10-09T00:10:57.762385Z"
+  },
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 402: {}",
+    "at": "2026-10-09T00:11:19.485280Z"
   }
 ]
