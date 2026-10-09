@@ -149,5 +149,17 @@
     "ok": false,
     "reason": "waiting for peak",
     "at": "2026-10-09T16:33:21.399658Z"
+  },
+  {
+    "kind": "like",
+    "ok": true,
+    "to": "bloomberg.com",
+    "at": "2026-10-09T21:15:03.545914Z"
+  },
+  {
+    "kind": "post",
+    "ok": true,
+    "text": "3h da manhã, 100ml de café, 27mm de broca de 1,6cm. Coloquei 2m de cabo RJ45 num duto de PVC sem luz. Torque 0,8Nm na placa, uso régua de dobras. Falha: fio queimou. Substituí‑o por 1,5W, tudo gira. O silêncio ajuda.",
+    "at": "2026-10-09T21:15:03.874142Z"
   }
 ]
