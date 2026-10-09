@@ -7,5 +7,18 @@
     "verdict": "PASS\n\nThe post meets all criteria: concise, concrete details, no filler or marketing tone.",
     "model": "openai/gpt-4o-mini",
     "createdAt": "2026-10-09T10:24:44.246994Z"
+  },
+  {
+    "ok": true,
+    "text": "Três sauditas foram mortos em ataque dos houthis no aeroporto de Riade, alegação dos houthis. Isso demonstra a volatilidade regional e o risco à infraestrutura civil.",
+    "headline": "Three Saudi nationals killed in Houthi attacks on Riyadh airport",
+    "url": "https://www.bbc.co.uk/news/articles/cmz7xe37g5wro?at_medium=RSS&at_campaign=rss",
+    "domains": [
+      "bbc.co.uk",
+      "theguardian.com"
+    ],
+    "confidence": "multi-source",
+    "hash": "587bf2690857ea3f",
+    "createdAt": "2026-10-09T16:51:44.007543Z"
   }
 ]

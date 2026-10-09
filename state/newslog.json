@@ -222,5 +222,28 @@
       "kept": 276
     },
     "at": "2026-10-09T09:34:42.377311Z"
+  },
+  {
+    "ok": true,
+    "fetched": 270,
+    "clusters": 222,
+    "confirmed": 76,
+    "queued": true,
+    "reason": "",
+    "sources": {
+      "gdelt_raw": 0,
+      "wikipedia_raw": 0,
+      "rss_raw": 279,
+      "hn_raw": 40,
+      "kept": 270
+    },
+    "text": "Três sauditas foram mortos em ataque dos houthis no aeroporto de Riade, alegação dos houthis. Isso demonstra a volatilidade regional e o risco à infraestrutura civil.",
+    "headline": "Three Saudi nationals killed in Houthi attacks on Riyadh airport",
+    "domains": [
+      "bbc.co.uk",
+      "theguardian.com"
+    ],
+    "confidence": "multi-source",
+    "at": "2026-10-09T16:51:44.008318Z"
   }
 ]
