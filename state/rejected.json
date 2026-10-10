@@ -155,5 +155,15 @@
     "text": "3h da manhã, 100ml de café, 27mm de broca de 1,6cm. Coloquei 2m de cabo RJ45 num duto de PVC sem luz. Torque 0,8Nm na placa, uso régua de dobras. Falha: fio queimou. Substituí‑o por 1,5W, tudo gira. O silêncio ajuda.",
     "topic": "building things at 3am and why it works",
     "at": "2026-10-10T00:43:48.992326Z"
+  },
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 404: {\"error\":\"Model not found: llama. This is our legacy API - for the full model list and new features, visit https://enter.pollinations.ai\",\"status\":404,\"deprecation_notice\":\"NOT",
+    "at": "2026-10-10T04:26:56.004889Z"
+  },
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 402: {}",
+    "at": "2026-10-10T04:27:18.817019Z"
   }
 ]
