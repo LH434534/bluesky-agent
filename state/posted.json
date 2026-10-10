@@ -20,5 +20,20 @@
     "createdAt": "2026-10-09T10:24:44.246994Z",
     "uri": "at://did:plc:dh6eweh7brbtraluugpvpruj/app.bsky.feed.post/3mxhvfsbybh2v",
     "postedAt": "2026-10-09T21:15:03.873243Z"
+  },
+  {
+    "ok": true,
+    "text": "Três sauditas foram mortos em ataque dos houthis no aeroporto de Riade, alegação dos houthis. Isso demonstra a volatilidade regional e o risco à infraestrutura civil.",
+    "headline": "Three Saudi nationals killed in Houthi attacks on Riyadh airport",
+    "url": "https://www.bbc.co.uk/news/articles/cmz7xe37g5wro?at_medium=RSS&at_campaign=rss",
+    "domains": [
+      "bbc.co.uk",
+      "theguardian.com"
+    ],
+    "confidence": "multi-source",
+    "hash": "587bf2690857ea3f",
+    "createdAt": "2026-10-09T16:51:44.007543Z",
+    "uri": "at://did:plc:dh6eweh7brbtraluugpvpruj/app.bsky.feed.post/3mxibwg2ct725",
+    "postedAt": "2026-10-10T00:59:06.335956Z"
   }
 ]

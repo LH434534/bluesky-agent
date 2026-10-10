@@ -1,19 +1,6 @@
 [
   {
     "ok": true,
-    "text": "Três sauditas foram mortos em ataque dos houthis no aeroporto de Riade, alegação dos houthis. Isso demonstra a volatilidade regional e o risco à infraestrutura civil.",
-    "headline": "Three Saudi nationals killed in Houthi attacks on Riyadh airport",
-    "url": "https://www.bbc.co.uk/news/articles/cmz7xe37g5wro?at_medium=RSS&at_campaign=rss",
-    "domains": [
-      "bbc.co.uk",
-      "theguardian.com"
-    ],
-    "confidence": "multi-source",
-    "hash": "587bf2690857ea3f",
-    "createdAt": "2026-10-09T16:51:44.007543Z"
-  },
-  {
-    "ok": true,
     "text": "Um sistema simples não tem ponto único de falha, nem lógica que suga CPU, nem firmware que corra vulnerável. O roteador de 3 portas de 1997 ainda entrega 99,9 % uptime; a nuvem de micro‑serviços falha 20 %. Simplicidade = longevidade.",
     "hash": "77419862b443cca0",
     "topic": "why simple systems outlive clever ones",
