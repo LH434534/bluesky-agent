@@ -185,5 +185,12 @@
     "ok": false,
     "reason": "no model available for role draft: pollinations: http 402: {}",
     "at": "2026-10-10T17:01:43.396817Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "3h da manhã, 100ml de café, 27mm de broca de 1,6cm. Coloquei 2m de cabo RJ45 num duto de PVC sem luz. Torque 0,8Nm na placa, uso régua de dobras. Falha: fio queimou. Substituí‑o por 1,5W, tudo gira. O silêncio ajuda.",
+    "topic": "building things at 3am and why it works",
+    "at": "2026-10-10T17:18:27.544959Z"
   }
 ]
