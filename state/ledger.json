@@ -129,7 +129,7 @@
       "openai/gpt-4o-mini": 1
     },
     "2026-10-10": {
-      "openai/gpt-4.1": 1
+      "openai/gpt-4.1": 2
     }
   }
 }
