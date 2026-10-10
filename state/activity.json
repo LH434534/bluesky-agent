@@ -167,5 +167,17 @@
     "ok": true,
     "text": "Três sauditas foram mortos em ataque dos houthis no aeroporto de Riade, alegação dos houthis. Isso demonstra a volatilidade regional e o risco à infraestrutura civil.",
     "at": "2026-10-10T00:59:06.336769Z"
+  },
+  {
+    "kind": "like",
+    "ok": true,
+    "to": "radiomotostorie.bsky.social",
+    "at": "2026-10-10T06:57:21.065865Z"
+  },
+  {
+    "kind": "post",
+    "ok": false,
+    "reason": "waiting for peak",
+    "at": "2026-10-10T06:57:21.095222Z"
   }
 ]
