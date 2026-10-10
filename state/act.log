@@ -1,5 +1,8 @@
 {
-  "ran": [],
+  "ran": [
+    "like",
+    "post"
+  ],
   "skipped": [],
   "errors": 0,
   "pool": 27,
@@ -9,15 +12,10 @@
     0.0,
     0.0,
     0.0,
-    0.37,
+    0.0,
     0.0,
     0.0
   ],
   "llm": "pollinations",
-  "acted": 0,
-  "why_idle": [
-    "waiting for peak",
-    "waiting for peak",
-    "waiting for peak"
-  ]
+  "acted": 2
 }
