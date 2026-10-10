@@ -293,5 +293,21 @@
       "kept": 276
     },
     "at": "2026-10-10T11:58:24.271834Z"
+  },
+  {
+    "ok": false,
+    "fetched": 286,
+    "clusters": 240,
+    "confirmed": 82,
+    "queued": false,
+    "reason": "no model available for role draft: pollinations: http 402: {}",
+    "sources": {
+      "gdelt_raw": 56,
+      "wikipedia_raw": 0,
+      "rss_raw": 282,
+      "hn_raw": 40,
+      "kept": 286
+    },
+    "at": "2026-10-10T17:01:43.397509Z"
   }
 ]
