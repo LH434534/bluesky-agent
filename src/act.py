@@ -6,6 +6,8 @@ Nothing executes without both gates green.
 """
 
 import random
+import re
+import unicodedata
 from datetime import datetime, timezone
 
 from src import bluesky
@@ -52,6 +54,23 @@ def _text(item: dict) -> str:
     post = item.get("post", item)
     rec = post.get("record", post)
     return (rec.get("text") or "").strip()
+
+
+def _reply_has_anchor(post_text: str, reply_text: str) -> bool:
+    """Evita respostas fora do assunto: exige uma âncora lexical do post."""
+    stop = {"para", "como", "mais", "muito", "isso", "essa", "esse", "aqui", "sobre",
+            "quando", "porque", "qual", "quem", "com", "uma", "uns", "umas", "que",
+            "não", "sim", "mas", "pra", "por", "dos", "das", "nos", "nas", "você", "vocês"}
+
+    def words(value: str) -> set[str]:
+        value = unicodedata.normalize("NFKD", value.casefold())
+        value = "".join(c for c in value if not unicodedata.combining(c))
+        return {w[:5] for w in re.findall(r"[a-z0-9]{4,}", value) if w not in stop}
+
+    source, answer = words(post_text), words(reply_text)
+    if not source or not answer:
+        return False
+    return bool(source & answer)
 
 
 def _author(item: dict) -> dict:
@@ -135,6 +154,9 @@ def do_reply(cfg: dict, jwt: str, item: dict) -> bool:
     clean_draft, why = spam.scan(draft, cfg)
     if not clean_draft or not draft:
         _log({"kind": "reply", "ok": False, "reason": f"own draft rejected: {why}"})
+        return False
+    if not _reply_has_anchor(text, draft):
+        _log({"kind": "reply", "ok": False, "reason": "reply sem âncora no post original"})
         return False
 
     from src import dedupe
