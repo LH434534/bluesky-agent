@@ -1,6 +1,6 @@
-=== preflight 2026-10-07T13:40:53Z ===
+=== preflight 2026-10-11T23:34:17Z ===
 handle=[lh434534.github.io] pds=[https://bsky.social]
-autonomy=[2] run=37630421078
+autonomy=[2] run=38184771289
 
 --- preflight ---
 ================================================================
@@ -8,7 +8,7 @@ PREFLIGHT
 ================================================================
   handle  lh434534.github.io
   app pw  jy4************w2ip
-  gh tok  ghs**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************i0gA
+  gh tok  ghs**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************BSAQ
   pds     https://bsky.social
 
 IDENTIDADE
@@ -28,30 +28,24 @@ rode primeiro: DRY_RUN=1 python -m src.act_run
 preflight_exit=0
 
 --- news smoke ---
+{
   "fetched": 270,
-  "clusters": 224,
-  "confirmed": 75,
-  "queued": true,
-  "reason": "no model available for role draft: pollinations: http 404: {\"error\":\"Model not found: llama. This is our legacy API - for the full model list and new features, visit https://enter.pollinations.ai\",\"status\":404,\"deprecation_notice\":\"NOT",
+  "clusters": 230,
+  "confirmed": 76,
+  "queued": false,
+  "reason": "no model available for role draft: pollinations: http 402: {}",
   "sources": {
     "gdelt_raw": 0,
     "wikipedia_raw": 0,
-    "rss_raw": 277,
+    "rss_raw": 279,
     "hn_raw": 40,
     "kept": 270
-  },
-  "text": "Christa Pike, a US death‑row inmate, was awake and speaking after a failed execution, lawyers say. It shows lethal injection protocols can malfunction, putting prisoners and the system in doubt.",
-  "headline": "US death row inmate Christa Pike awake and speaking after failed execution, lawyers say",
-  "domains": [
-    "bbc.co.uk",
-    "theguardian.com"
-  ],
-  "confidence": "multi-source"
+  }
 }
 news_exit=0
 
 --- llm provider ---
-{'provider': 'pollinations', 'token': 'token de instalacao — ok se o workflow tem models: read', 'at': '2026-10-07T13:43:22.183407Z'}
+{'provider': 'pollinations', 'token': 'token de instalacao — ok se o workflow tem models: read', 'at': '2026-10-11T23:36:11.657503Z'}
 --- net probe ---
 HTTP/2 200 
 content-type: text/plain
@@ -61,7 +55,7 @@ OK
 
 --- curl raw (pollinations) ---
 HTTP/2 200 
-date: Wed, 07 Oct 2026 13:43:34 GMT
+date: Sun, 11 Oct 2026 23:36:22 GMT
 content-type: application/json; charset=utf-8
 content-length: 491
 access-control-allow-origin: *
@@ -75,7 +69,7 @@ x-cache-key: 04b0e3de8141b678fe64cd9928297643962350da91ec009250bc62be6ee4ab0d
 x-pollinations-logo: https://raw.githubusercontent.com/pollinations/pollinations/main/packages/ui/src/brand/lockup-horizontal-black.svg
 x-powered-by: Pollinations.AI
 server: cloudflare
-cf-ray: a46d55e6ca1ceb57-IAD
+cf-ray: a491afc2ed3bd6a9-IAD
 
 {"id":"pllns_20e1bc470d43d65fd1ec0a884a77142a","choices":[{"index":0,"message":{"role":"assistant","content":"Ok.","reasoning":"User says \"say ok\". They want me to respond with \"ok\". But guidelines: I should respond appropriately. They just want me to say \"ok\". I can comply.","tool_calls":[]},"finish_reason":"stop"}],"created":1791380160,"model":"gpt-oss-20b","object":"chat.completion","usage":{"prompt_tokens":310,"completion_tokens":48,"tot
 --- endpoint hunt ---
@@ -105,13 +99,13 @@ cf-ray: a46d55e6ca1ceb57-IAD
   200   https://models.github.ai/inference/chat/completions/ [short-id]    OK 
 
 OPEN PROVIDERS:
-  402   pollinations     {}
+  404   pollinations     {"error":"Model not found: openai/gpt-4o-mini. This is our legacy API - for the 
   401   openrouter-free  {"error":{"message":"Missing Authentication header","code":401}}
   0     hf-inference     
   401   groq             {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"inv
-  401   together         {   "id": "p4HAubn-2kFHot-a46d55f64b34d647",   "error": {     "message": "Invali
+  401   together         {   "id": "p4rrVX8-2kFHot-a491afd0292c7223",   "error": {     "message": "Invali
   401   mistral          {"detail":"Invalid API Key"} 
-  401   cohere           {"id":"14229fb3-1026-401b-be98-cff695a5fc88","message":"Incorrect API key provid
+  401   cohere           {"id":"dc96bc38-b2c8-4e5f-934c-706145fefac4","message":"Incorrect API key provid
   0     ollama-local     
 
 CURL: HTTP/2 200 
@@ -119,49 +113,6 @@ content-type: text/plain
 
 OK
 
---- endpoint hunt ---
-  200   https://models.github.ai/inference/v1/chat/completions [bearer+a   OK 
-  200   https://models.github.ai/inference/v1/chat/completions [bearer+p   OK 
-  200   https://models.github.ai/inference/v1/chat/completions [github-t   OK 
-  200   https://models.github.ai/inference/v1/chat/completions [short-id   OK 
-  200   https://models.github.ai/v1/chat/completions [default]             OK 
-  200   https://models.github.ai/v1/chat/completions [bearer+api-version   OK 
-  200   https://models.github.ai/v1/chat/completions [bearer+preview]      OK 
-  200   https://models.github.ai/v1/chat/completions [github-token]        OK 
-  200   https://models.github.ai/v1/chat/completions [short-id]            OK 
-  200   https://models.github.ai/chat/completions [default]                OK 
-  200   https://models.github.ai/chat/completions [bearer+api-version]     OK 
-  200   https://models.github.ai/chat/completions [bearer+preview]         OK 
-  200   https://models.github.ai/chat/completions [github-token]           OK 
-  200   https://models.github.ai/chat/completions [short-id]               OK 
-  0     https://api.models.github.ai/inference/chat/completions [default   
-  0     https://api.models.github.ai/inference/chat/completions [bearer+   
-  0     https://api.models.github.ai/inference/chat/completions [bearer+   
-  0     https://api.models.github.ai/inference/chat/completions [github-   
-  0     https://api.models.github.ai/inference/chat/completions [short-i   
-  200   https://models.github.ai/inference/chat/completions/ [default]     OK 
-  200   https://models.github.ai/inference/chat/completions/ [bearer+api   OK 
-  200   https://models.github.ai/inference/chat/completions/ [bearer+pre   OK 
-  200   https://models.github.ai/inference/chat/completions/ [github-tok   OK 
-  200   https://models.github.ai/inference/chat/completions/ [short-id]    OK 
-
-OPEN PROVIDERS:
-  402   pollinations     {}
-  401   openrouter-free  {"error":{"message":"Missing Authentication header","code":401}}
-  0     hf-inference     
-  401   groq             {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"inv
-  401   together         {   "id": "p4HAvSv-2kFHot-a46d5607a8e14e70",   "error": {     "message": "Invali
-  401   mistral          {"detail":"Invalid API Key"} 
-  401   cohere           {"id":"42d604a9-7e12-44e2-93b9-c060886800f1","message":"Incorrect API key provid
-  0     ollama-local     
-
-CURL: HTTP/2 200 
-content-type: text/plain
-
-OK
-
---- hunt2: stub or real ---
-/opt/hostedtoolcache/Python/3.12.14/x64/bin/python: No module named src.hunt2
 --- model catalog probe ---
 no-redirect: {"status": 200, "url": "https://models.github.ai/inference/chat/completions", "body": "OK\r\n"}
   messages+temp          status=200 body='OK\r\n'
@@ -176,16 +127,16 @@ catalog: {"error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"}
   ],
   "skipped": [],
   "errors": 0,
-  "pool": 26,
+  "pool": 30,
   "top_scores": [
     0.0,
     0.0,
     0.0,
-    0.34,
+    0.0,
+    0.12,
     0.0,
     0.0,
-    0.0,
-    0.0
+    0.15
   ],
   "llm": "pollinations",
   "acted": 1
