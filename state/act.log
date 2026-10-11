@@ -1,21 +1,20 @@
 {
   "ran": [
-    "like",
     "post"
   ],
   "skipped": [],
   "errors": 0,
   "pool": 30,
   "top_scores": [
-    0.07,
     0.0,
     0.0,
     0.0,
     0.0,
-    0.07,
+    0.0,
+    0.0,
     0.0,
     0.0
   ],
   "llm": "pollinations",
-  "acted": 2
+  "acted": 1
 }
