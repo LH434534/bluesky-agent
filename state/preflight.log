@@ -1,6 +1,6 @@
-=== preflight 2026-10-11T23:34:17Z ===
+=== preflight 2026-10-11T23:40:12Z ===
 handle=[lh434534.github.io] pds=[https://bsky.social]
-autonomy=[2] run=38184771289
+autonomy=[2] run=38185135749
 
 --- preflight ---
 ================================================================
@@ -8,7 +8,7 @@ PREFLIGHT
 ================================================================
   handle  lh434534.github.io
   app pw  jy4************w2ip
-  gh tok  ghs**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************BSAQ
+  gh tok  ghs**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************t54Q
   pds     https://bsky.social
 
 IDENTIDADE
@@ -29,8 +29,8 @@ preflight_exit=0
 
 --- news smoke ---
 {
-  "fetched": 270,
-  "clusters": 230,
+  "fetched": 271,
+  "clusters": 231,
   "confirmed": 76,
   "queued": false,
   "reason": "no model available for role draft: pollinations: http 402: {}",
@@ -39,13 +39,13 @@ preflight_exit=0
     "wikipedia_raw": 0,
     "rss_raw": 279,
     "hn_raw": 40,
-    "kept": 270
+    "kept": 271
   }
 }
 news_exit=0
 
 --- llm provider ---
-{'provider': 'pollinations', 'token': 'token de instalacao — ok se o workflow tem models: read', 'at': '2026-10-11T23:36:11.657503Z'}
+{'provider': 'pollinations', 'token': 'token de instalacao — ok se o workflow tem models: read', 'at': '2026-10-11T23:42:05.892799Z'}
 --- net probe ---
 HTTP/2 200 
 content-type: text/plain
@@ -55,7 +55,7 @@ OK
 
 --- curl raw (pollinations) ---
 HTTP/2 200 
-date: Sun, 11 Oct 2026 23:36:22 GMT
+date: Sun, 11 Oct 2026 23:42:18 GMT
 content-type: application/json; charset=utf-8
 content-length: 491
 access-control-allow-origin: *
@@ -69,7 +69,7 @@ x-cache-key: 04b0e3de8141b678fe64cd9928297643962350da91ec009250bc62be6ee4ab0d
 x-pollinations-logo: https://raw.githubusercontent.com/pollinations/pollinations/main/packages/ui/src/brand/lockup-horizontal-black.svg
 x-powered-by: Pollinations.AI
 server: cloudflare
-cf-ray: a491afc2ed3bd6a9-IAD
+cf-ray: a491b873ebd9117f-ORD
 
 {"id":"pllns_20e1bc470d43d65fd1ec0a884a77142a","choices":[{"index":0,"message":{"role":"assistant","content":"Ok.","reasoning":"User says \"say ok\". They want me to respond with \"ok\". But guidelines: I should respond appropriately. They just want me to say \"ok\". I can comply.","tool_calls":[]},"finish_reason":"stop"}],"created":1791380160,"model":"gpt-oss-20b","object":"chat.completion","usage":{"prompt_tokens":310,"completion_tokens":48,"tot
 --- endpoint hunt ---
@@ -103,9 +103,9 @@ OPEN PROVIDERS:
   401   openrouter-free  {"error":{"message":"Missing Authentication header","code":401}}
   0     hf-inference     
   401   groq             {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"inv
-  401   together         {   "id": "p4rrVX8-2kFHot-a491afd0292c7223",   "error": {     "message": "Invali
+  401   together         {   "id": "p4rtKxf-2kFHot-a491b88dcf52a221",   "error": {     "message": "Invali
   401   mistral          {"detail":"Invalid API Key"} 
-  401   cohere           {"id":"dc96bc38-b2c8-4e5f-934c-706145fefac4","message":"Incorrect API key provid
+  401   cohere           {"id":"8e036edb-2622-4253-8436-175ac1913736","message":"Incorrect API key provid
   0     ollama-local     
 
 CURL: HTTP/2 200 
@@ -123,22 +123,25 @@ catalog: {"error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"}
 --- dry run session ---
 {
   "ran": [
+    "like",
+    "like",
+    "like",
     "post"
   ],
   "skipped": [],
   "errors": 0,
-  "pool": 30,
+  "pool": 29,
   "top_scores": [
     0.0,
     0.0,
     0.0,
     0.0,
-    0.12,
     0.0,
     0.0,
-    0.15
+    0.0,
+    0.0
   ],
   "llm": "pollinations",
-  "acted": 1
+  "acted": 4
 }
 act_exit=0
