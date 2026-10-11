@@ -281,5 +281,15 @@
     "text": "Um sistema simples não tem ponto único de falha, nem lógica que suga CPU, nem firmware que corra vulnerável. O roteador de 3 portas de 1997 ainda entrega 99,9 % uptime; a nuvem de micro‑serviços falha 20 %. Simplicidade = longevidade.",
     "topic": "why simple systems outlive clever ones",
     "at": "2026-10-11T19:29:16.580922Z"
+  },
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 402: {}",
+    "at": "2026-10-11T21:32:23.999341Z"
+  },
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 404: {\"error\":\"Model not found: llama. This is our legacy API - for the full model list and new features, visit https://enter.pollinations.ai\",\"status\":404,\"deprecation_notice\":\"NOT",
+    "at": "2026-10-11T21:32:31.567116Z"
   }
 ]
