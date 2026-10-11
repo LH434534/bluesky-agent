@@ -10,7 +10,6 @@ draft, reasoning model almost never. Budget is tracked per day in the ledger
 and enforced before every call.
 """
 
-import os
 from datetime import datetime, timedelta, timezone
 
 from src import brain

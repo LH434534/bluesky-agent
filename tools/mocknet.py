@@ -5,7 +5,6 @@ parses real-shaped payloads, social.py builds real atproto records, policy.py
 gates for real, ground.py clusters for real. Only the wire is fake.
 """
 
-import io
 import json
 import random
 import urllib.request

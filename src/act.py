@@ -5,7 +5,6 @@ engage with, maybe post. Every action goes through policy.allow + spam.scan.
 Nothing executes without both gates green.
 """
 
-import json
 import random
 from datetime import datetime, timezone
 

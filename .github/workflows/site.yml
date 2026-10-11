@@ -78,14 +78,3 @@ jobs:
       - name: report
         run: echo "pages=${{ steps.deploy.outcome }}"
         continue-on-error: true
-      - name: fallback — publish dashboard via gh-pages branch
-        if: steps.deploy.outcome != 'success'
-        run: |
-          git config user.name "ratman4080"
-          git config user.email "bot@nest.local"
-          git checkout -B gh-pages
-          git add -f docs/index.html
-          git commit -m "site: gh-pages fallback [skip ci]" || echo "nothing"
-          git push -f origin gh-pages
-      - name: report
-        run: echo "pages=${{ steps.deploy.outcome }}"

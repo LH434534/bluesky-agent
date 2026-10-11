@@ -7,13 +7,10 @@ it at a live account.
 """
 
 import argparse
-import io
-import json
 import os
 import pathlib
 import random
 import sys
-import time
 from datetime import datetime, timezone
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -62,7 +59,6 @@ def main() -> int:
 
     from datetime import timedelta
 
-    import queue as qmod
     from src import act, fame, policy, queue as q, site, timing
 
     def advance(minutes: int) -> None:
@@ -125,11 +121,11 @@ def main() -> int:
         body = rec.get("text") or subj or ""
         print(f'  {i}. [{kind:6}] {str(body)[:76]}')
 
-    print(f"\nREJEICOES (ultimas 8):")
+    print("\nREJEICOES (ultimas 8):")
     for r in q.read("rejected")[-8:]:
         print(f'  - {str(r.get("reason",""))[:74]}')
 
-    print(f"\nATIVIDADE (ultimas 12):")
+    print("\nATIVIDADE (ultimas 12):")
     for a in q.read("activity")[-12:]:
         mark = "OK " if a.get("ok") else "NO "
         target = f'→ @{a.get("to")}' if a.get("to") else ""

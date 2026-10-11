@@ -7,10 +7,8 @@ call, and enough to learn a rhythm.
 
 import json
 import pathlib
-import statistics
 from datetime import datetime, timedelta, timezone
 
-from src import policy
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 STATE = ROOT / "state"

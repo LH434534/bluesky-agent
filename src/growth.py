@@ -13,7 +13,6 @@ import random
 from datetime import datetime, timezone
 
 from src import models
-from src import policy
 from src import social
 from src import spam
 

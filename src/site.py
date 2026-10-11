@@ -4,7 +4,6 @@ Reads state/*.json + ledger.json, writes one HTML file for GitHub Pages.
 """
 
 import html
-import json
 import pathlib
 from datetime import datetime, timedelta, timezone
 

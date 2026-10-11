@@ -11,7 +11,6 @@ from datetime import datetime, timezone
 from src import cfg as cfgmod
 from src import dedupe
 from src import ground
-from src import models
 from src import news
 from src import queue as q
 from src import timing

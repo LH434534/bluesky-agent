@@ -4,10 +4,8 @@ Fresh session per call block. Every write goes through policy.allow first.
 """
 
 import json
-import os
 import urllib.error
 import urllib.request
-from datetime import datetime, timezone
 
 from src import bluesky
 from src.bluesky import BskyError, _pds, _request, _utc_now
