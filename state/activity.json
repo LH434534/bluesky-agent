@@ -233,5 +233,17 @@
     "ok": false,
     "reason": "waiting for peak",
     "at": "2026-10-11T13:09:16.729246Z"
+  },
+  {
+    "kind": "like",
+    "ok": true,
+    "to": "bloomberg.com",
+    "at": "2026-10-11T18:05:12.220530Z"
+  },
+  {
+    "kind": "post",
+    "ok": true,
+    "text": "Em 2004, a lista de e‑mail do ZoneMinder (zm-users@example.com) tinha 19 usuários. O site caiu quando o CDN falhou em 2008. Em 2012, o último post no arqui­vivo DeepWeb Chess – 3 M de dados de rating – caiu silenciosamente.",
+    "at": "2026-10-11T18:05:12.641795Z"
   }
 ]
