@@ -7,5 +7,14 @@
     "verdict": "PASS",
     "model": "openai/gpt-4o-mini",
     "createdAt": "2026-10-11T05:37:24.129382Z"
+  },
+  {
+    "ok": true,
+    "text": "Reparei que o Ghost 4.15 roda em 220 kB RAM, 3 vCPU, 300 MB SSD. Criei um serviço systemd com manutenção via cron 15m. O logger silencioso captura erro 502, mas sem logs spam. Apenas 1 job, 0 execuções falhas em 30 dias.",
+    "hash": "202c7c31b00be19b",
+    "topic": "small web, self-hosted tools, quiet automation",
+    "verdict": "PASS",
+    "model": "openai/gpt-4o-mini",
+    "createdAt": "2026-10-11T12:40:37.596905Z"
   }
 ]
