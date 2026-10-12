@@ -257,5 +257,17 @@
     "ok": false,
     "reason": "waiting for peak",
     "at": "2026-10-12T01:05:03.923030Z"
+  },
+  {
+    "kind": "like",
+    "ok": true,
+    "to": "unicornriot.bsky.social",
+    "at": "2026-10-12T07:18:56.938605Z"
+  },
+  {
+    "kind": "post",
+    "ok": false,
+    "reason": "daily quota 2/1",
+    "at": "2026-10-12T07:18:57.201822Z"
   }
 ]
