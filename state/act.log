@@ -1,7 +1,5 @@
 {
-  "ran": [
-    "post"
-  ],
+  "ran": [],
   "skipped": [],
   "errors": 0,
   "pool": 30,
@@ -16,5 +14,10 @@
     0.0
   ],
   "llm": "pollinations",
-  "acted": 1
+  "acted": 0,
+  "why_idle": [
+    "waiting for peak",
+    "waiting for peak",
+    "waiting for peak"
+  ]
 }

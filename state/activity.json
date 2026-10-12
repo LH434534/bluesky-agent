@@ -251,5 +251,11 @@
     "ok": true,
     "text": "Reparei que o Ghost 4.15 roda em 220 kB RAM, 3 vCPU, 300 MB SSD. Criei um serviço systemd com manutenção via cron 15m. O logger silencioso captura erro 502, mas sem logs spam. Apenas 1 job, 0 execuções falhas em 30 dias.",
     "at": "2026-10-11T21:53:48.045860Z"
+  },
+  {
+    "kind": "post",
+    "ok": false,
+    "reason": "waiting for peak",
+    "at": "2026-10-12T01:05:03.923030Z"
   }
 ]
