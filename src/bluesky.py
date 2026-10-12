@@ -85,9 +85,10 @@ def _facets(text: str) -> list:
     encoded = text.encode("utf-8")
     for m in _URL.finditer(text):
         url = m.group(0)
-        stripped = _SCHEME.sub("", url)
         byte_start = len(text[: m.start()].encode("utf-8"))
-        byte_end = byte_start + len(stripped.encode("utf-8"))
+        # Facet offsets must cover the URL, including its scheme. Adding the
+        # scheme-stripped length truncated every detected link.
+        byte_end = len(text[: m.end()].encode("utf-8"))
         if byte_end > len(encoded):
             continue
         out.append(
