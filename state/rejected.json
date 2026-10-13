@@ -405,5 +405,19 @@
     "text": "Reparei que o Ghost 4.15 roda em 220 kB RAM, 3 vCPU, 300 MB SSD. Criei um serviço systemd com manutenção via cron 15m. O logger silencioso captura erro 502, mas sem logs spam. Apenas 1 job, 0 execuções falhas em 30 dias.",
     "topic": "small web, self-hosted tools, quiet automation",
     "at": "2026-10-13T06:41:32.684384Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Reparei que o Ghost 4.15 roda em 220 kB RAM, 3 vCPU, 300 MB SSD. Criei um serviço systemd com manutenção via cron 15m. O logger silencioso captura erro 502, mas sem logs spam. Apenas 1 job, 0 execuções falhas em 30 dias.",
+    "topic": "small web, self-hosted tools, quiet automation",
+    "at": "2026-10-13T16:54:21.879680Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Reparei que o Ghost 4.15 roda em 220 kB RAM, 3 vCPU, 300 MB SSD. Criei um serviço systemd com manutenção via cron 15m. O logger silencioso captura erro 502, mas sem logs spam. Apenas 1 job, 0 execuções falhas em 30 dias.",
+    "topic": "small web, self-hosted tools, quiet automation",
+    "at": "2026-10-13T16:54:22.688975Z"
   }
 ]
