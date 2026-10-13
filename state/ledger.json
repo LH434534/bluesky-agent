@@ -161,9 +161,21 @@
       "target": "did:plc:i7futw7mxqlzedq6f5p7ffog",
       "ok": true,
       "at": "2026-10-12T16:51:21.336557Z"
+    },
+    {
+      "kind": "auth",
+      "target": "",
+      "ok": false,
+      "at": "2026-10-13T03:51:24.589782Z"
     }
   ],
-  "errors": [],
+  "errors": [
+    {
+      "kind": "auth",
+      "error": "bsky http 401: {\"error\":\"AuthenticationRequired\",\"message\":\"Invalid identifier or password\"}",
+      "at": "2026-10-13T03:51:24.589782Z"
+    }
+  ],
   "followed": {
     "did:d": {
       "handle": "pydev",
