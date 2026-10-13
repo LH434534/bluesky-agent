@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"meta/muse-wonder\",\"canonical_slug\":\"meta/muse-wonder-20261012\",\"hugging_face_id\":null,\"name\":\"Meta: Muse Wonder\",\"created\":1791807945,\"description\":\"Muse Wonder is a frontier reasoning"
+    "body": "{\"data\":[{\"id\":\"scaledown/summarize\",\"canonical_slug\":\"scaledown/summarize-20260928\",\"hugging_face_id\":null,\"name\":\"ScaleDown: Summarize\",\"created\":1791893360,\"description\":\"Summarize is an abstractiv"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"deepseek-v4.1-flash\",\"model\":\"deepseek-v4.1-flash\",\"modified_at\":\"2026-09-10T03:00:00Z\",\"size\":486723007816,\"digest\":\"97308b916fc3\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family"
+    "body": "{\"models\":[{\"name\":\"nemotron-3-super\",\"model\":\"nemotron-3-super\",\"modified_at\":\"2026-03-11T00:00:00Z\",\"size\":230500000000,\"digest\":\"da11955bb451\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\""
   },
   "cloudflare": {
     "status": 0,
