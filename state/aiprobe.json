@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"stepfun/step-5-preview\",\"canonical_slug\":\"stepfun/step-5-preview-20261008\",\"hugging_face_id\":null,\"name\":\"StepFun: Step 5 Preview\",\"created\":1791462849,\"description\":\"Step 5 Preview is"
+    "body": "{\"data\":[{\"id\":\"meta/muse-wonder\",\"canonical_slug\":\"meta/muse-wonder-20261012\",\"hugging_face_id\":null,\"name\":\"Meta: Muse Wonder\",\"created\":1791807945,\"description\":\"Muse Wonder is a frontier reasoning"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"glm-5.3\",\"model\":\"glm-5.3\",\"modified_at\":\"2026-08-28T08:00:00-07:00\",\"size\":755433728000,\"digest\":\"632dfda18c6d\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":nul"
+    "body": "{\"models\":[{\"name\":\"deepseek-v4.1-flash\",\"model\":\"deepseek-v4.1-flash\",\"modified_at\":\"2026-09-10T03:00:00Z\",\"size\":486723007816,\"digest\":\"97308b916fc3\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family"
   },
   "cloudflare": {
     "status": 0,
