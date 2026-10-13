@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"scaledown/summarize\",\"canonical_slug\":\"scaledown/summarize-20260928\",\"hugging_face_id\":null,\"name\":\"ScaleDown: Summarize\",\"created\":1791893360,\"description\":\"Summarize is an abstractiv"
+    "body": "{\"data\":[{\"id\":\"liquid/lfm-2.5-24b-a2b\",\"canonical_slug\":\"liquid/lfm-2.5-24b-a2b-20261012\",\"hugging_face_id\":\"LiquidAI/LFM2.5-24B-A2B\",\"name\":\"LiquidAI: LFM2.5-24B-A2B\",\"created\":1791912025,\"descripti"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"nemotron-3-super\",\"model\":\"nemotron-3-super\",\"modified_at\":\"2026-03-11T00:00:00Z\",\"size\":230500000000,\"digest\":\"da11955bb451\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\""
+    "body": "{\"models\":[{\"name\":\"kimi-k2.6\",\"model\":\"kimi-k2.6\",\"modified_at\":\"2026-04-20T00:00:00Z\",\"size\":595148192736,\"digest\":\"4764ecb21f85\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":null"
   },
   "cloudflare": {
     "status": 0,
