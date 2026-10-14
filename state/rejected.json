@@ -461,5 +461,15 @@
     "text": "Na última sprint, config meus pipelines: 5k de commits, 12 builds diárias, 85% de coverage, 0 deploys falhados. O que virou demo foi quando o canary estava com 300k hits e nossa API descobriu 3.7ms latency sob carga. Resultado: franqueio real, não simulação.",
     "topic": "automation that actually ships instead of demos",
     "at": "2026-10-14T04:44:48.612323Z"
+  },
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 402: {}",
+    "at": "2026-10-14T09:19:39.739912Z"
+  },
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 402: {}",
+    "at": "2026-10-14T09:19:46.115905Z"
   }
 ]
