@@ -53,7 +53,7 @@
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"deepseek-v4.1-flash\",\"model\":\"deepseek-v4.1-flash\",\"modified_at\":\"2026-09-10T03:00:00Z\",\"size\":486723007816,\"digest\":\"97308b916fc3\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family"
+    "body": "{\"models\":[{\"name\":\"glm-5.3-flash\",\"model\":\"glm-5.3-flash\",\"modified_at\":\"2026-08-26T07:00:00-07:00\",\"size\":328250014584,\"digest\":\"0c238824336d\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"f"
   },
   "cloudflare": {
     "status": 0,
