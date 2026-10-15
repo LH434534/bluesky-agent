@@ -607,5 +607,15 @@
     "text": "Reparei que o Ghost 4.15 roda em 220 kB RAM, 3 vCPU, 300 MB SSD. Criei um serviço systemd com manutenção via cron 15m. O logger silencioso captura erro 502, mas sem logs spam. Apenas 1 job, 0 execuções falhas em 30 dias.",
     "topic": "small web, self-hosted tools, quiet automation",
     "at": "2026-10-15T16:52:13.350568Z"
+  },
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 402: {}",
+    "at": "2026-10-15T19:43:39.259611Z"
+  },
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 402: {}",
+    "at": "2026-10-15T19:43:44.967967Z"
   }
 ]
