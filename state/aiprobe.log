@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"nvidia/nemotron-3.5-super-vl\",\"canonical_slug\":\"nvidia/nemotron-3.5-super-vl-20261015\",\"hugging_face_id\":\"nvidia/NVIDIA-Nemotron-3.5-Super-VL\",\"name\":\"NVIDIA: Nemotron 3.5 Super VL\",\"c"
+    "body": "{\"data\":[{\"id\":\"meta/muse-spark-open\",\"canonical_slug\":\"meta/muse-spark-open-20261015\",\"hugging_face_id\":\"meta-models/Muse-Spark-Open-816B-A42B\",\"name\":\"Meta: Muse Spark Open\",\"created\":1792087069,\"de"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"glm-5.2\",\"model\":\"glm-5.2\",\"modified_at\":\"2026-06-16T08:00:00-07:00\",\"size\":0,\"digest\":\"f553240f6dc4\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":null,\"paramete"
+    "body": "{\"models\":[{\"name\":\"kimi-k2.7-code\",\"model\":\"kimi-k2.7-code\",\"modified_at\":\"2026-06-12T00:00:00Z\",\"size\":595148192736,\"digest\":\"1a7e88d8c572\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"fami"
   },
   "cloudflare": {
     "status": 0,
