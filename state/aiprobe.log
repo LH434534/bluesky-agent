@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"meta/muse-spark-open\",\"canonical_slug\":\"meta/muse-spark-open-20261015\",\"hugging_face_id\":\"meta-models/Muse-Spark-Open-816B-A42B\",\"name\":\"Meta: Muse Spark Open\",\"created\":1792087069,\"de"
+    "body": "{\"data\":[{\"id\":\"moondream/moondream3-preview\",\"canonical_slug\":\"moondream/moondream3-preview-20261013\",\"hugging_face_id\":\"moondream/moondream3-preview\",\"name\":\"Moondream: Moondream 3 Preview\",\"created"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"kimi-k2.7-code\",\"model\":\"kimi-k2.7-code\",\"modified_at\":\"2026-06-12T00:00:00Z\",\"size\":595148192736,\"digest\":\"1a7e88d8c572\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"fami"
+    "body": "{\"models\":[{\"name\":\"nemotron-3-ultra\",\"model\":\"nemotron-3-ultra\",\"modified_at\":\"2026-06-04T00:00:00Z\",\"size\":0,\"digest\":\"4eecabff7a75\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":n"
   },
   "cloudflare": {
     "status": 0,
