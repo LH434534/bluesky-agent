@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"moondream/moondream3-preview\",\"canonical_slug\":\"moondream/moondream3-preview-20261013\",\"hugging_face_id\":\"moondream/moondream3-preview\",\"name\":\"Moondream: Moondream 3 Preview\",\"created"
+    "body": "{\"data\":[{\"id\":\"reflection/beam-1.0-501b-a23b\",\"canonical_slug\":\"reflection/beam-1.0-501b-a23b-20261016\",\"hugging_face_id\":\"reflection/Beam-1.0-501B-A23B\",\"name\":\"Reflection: Beam 1.0 501B A23B\",\"crea"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"kimi-k2.7-code\",\"model\":\"kimi-k2.7-code\",\"modified_at\":\"2026-06-12T00:00:00Z\",\"size\":595148192736,\"digest\":\"1a7e88d8c572\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"fami"
+    "body": "{\"models\":[{\"name\":\"deepseek-v4.1-flash\",\"model\":\"deepseek-v4.1-flash\",\"modified_at\":\"2026-09-10T03:00:00Z\",\"size\":486723007816,\"digest\":\"97308b916fc3\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family"
   },
   "cloudflare": {
     "status": 0,
