@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"xingchen-agi/xing4.0-29b-a4b:free\",\"canonical_slug\":\"xingchen-agi/xing4.0-29b-a4b-20261015\",\"hugging_face_id\":\"XingChen-AGI/Xing4.0-29B-A4B\",\"name\":\"XingChen: Xing4.0 29B A4B (free)\",\""
+    "body": "{\"data\":[{\"id\":\"elorian/glimpse\",\"canonical_slug\":\"elorian/glimpse-20261016\",\"hugging_face_id\":null,\"name\":\"Elorian: Glimpse\",\"created\":1792206629,\"description\":\"Glimpse is a multimodal visual reasoni"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"glm-5.3-flash\",\"model\":\"glm-5.3-flash\",\"modified_at\":\"2026-08-26T07:00:00-07:00\",\"size\":328250014584,\"digest\":\"0c238824336d\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"f"
+    "body": "{\"models\":[{\"name\":\"glm-5.3\",\"model\":\"glm-5.3\",\"modified_at\":\"2026-08-28T08:00:00-07:00\",\"size\":755433728000,\"digest\":\"632dfda18c6d\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":nul"
   },
   "cloudflare": {
     "status": 0,
