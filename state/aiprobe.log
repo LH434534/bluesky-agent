@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"elorian/glimpse\",\"canonical_slug\":\"elorian/glimpse-20261016\",\"hugging_face_id\":null,\"name\":\"Elorian: Glimpse\",\"created\":1792206629,\"description\":\"Glimpse is a multimodal visual reasoni"
+    "body": "{\"data\":[{\"id\":\"deepseek/deepseek-v4.1-flash-1017\",\"canonical_slug\":\"deepseek/deepseek-v4.1-flash-20261017\",\"hugging_face_id\":\"deepseek-ai/DeepSeek-V4.1-Flash-1017\",\"name\":\"DeepSeek: DeepSeek V4.1 Fla"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"glm-5.3\",\"model\":\"glm-5.3\",\"modified_at\":\"2026-08-28T08:00:00-07:00\",\"size\":755433728000,\"digest\":\"632dfda18c6d\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":nul"
+    "body": "{\"models\":[{\"name\":\"minimax-m2.7\",\"model\":\"minimax-m2.7\",\"modified_at\":\"2026-03-18T00:00:00Z\",\"size\":480836588544,\"digest\":\"d1008bea3761\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families"
   },
   "cloudflare": {
     "status": 0,
