@@ -549,5 +549,21 @@
       "kept": 267
     },
     "at": "2026-10-17T08:17:49.609487Z"
+  },
+  {
+    "ok": false,
+    "fetched": 372,
+    "clusters": 317,
+    "confirmed": 91,
+    "queued": false,
+    "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 30 seconds per IP. Retry after 3s, or get unlimited replies with a polle",
+    "sources": {
+      "gdelt_raw": 150,
+      "wikipedia_raw": 0,
+      "rss_raw": 283,
+      "hn_raw": 40,
+      "kept": 372
+    },
+    "at": "2026-10-18T17:06:47.883384Z"
   }
 ]
