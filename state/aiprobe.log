@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"deepseek/deepseek-v4.1-flash-1017\",\"canonical_slug\":\"deepseek/deepseek-v4.1-flash-20261017\",\"hugging_face_id\":\"deepseek-ai/DeepSeek-V4.1-Flash-1017\",\"name\":\"DeepSeek: DeepSeek V4.1 Fla"
+    "body": "{\"data\":[{\"id\":\"minimax/minimax-m3.1-flash:free\",\"canonical_slug\":\"minimax/minimax-m3.1-flash-20261019\",\"hugging_face_id\":null,\"name\":\"MiniMax: MiniMax M3.1 Flash (free)\",\"created\":1792379569,\"descrip"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"clef:27b\",\"model\":\"clef:27b\",\"modified_at\":\"2026-10-04T09:00:00-07:00\",\"size\":54969731792,\"digest\":\"490a326b58a0\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":nu"
+    "body": "{\"models\":[{\"name\":\"glm-5.2\",\"model\":\"glm-5.2\",\"modified_at\":\"2026-06-16T08:00:00-07:00\",\"size\":0,\"digest\":\"f553240f6dc4\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":null,\"paramete"
   },
   "cloudflare": {
     "status": 0,
