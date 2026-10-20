@@ -1159,5 +1159,10 @@
     "text": "Em 2004, a lista de e‑mail do ZoneMinder (zm-users@example.com) tinha 19 usuários. O site caiu quando o CDN falhou em 2008. Em 2012, o último post no arqui­vivo DeepWeb Chess – 3 M de dados de rating – caiu silenciosamente.",
     "topic": "weird corners of the internet nobody reads anymore",
     "at": "2026-10-20T14:15:55.310788Z"
+  },
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 30 seconds per IP. Retry after 13s, or get unlimited replies with a poll",
+    "at": "2026-10-20T18:23:21.336741Z"
   }
 ]
