@@ -1164,5 +1164,26 @@
     "ok": false,
     "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 30 seconds per IP. Retry after 13s, or get unlimited replies with a poll",
     "at": "2026-10-20T18:23:21.336741Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Em 2004, a lista de e‑mail do ZoneMinder (zm-users@example.com) tinha 19 usuários. O site caiu quando o CDN falhou em 2008. Em 2012, o último post no arqui­vivo DeepWeb Chess – 3 M de dados de rating – caiu silenciosamente.",
+    "topic": "weird corners of the internet nobody reads anymore",
+    "at": "2026-10-20T19:09:59.243183Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Em 2004, a lista de e‑mail do ZoneMinder (zm-users@example.com) tinha 19 usuários. O site caiu quando o CDN falhou em 2008. Em 2012, o último post no arqui­vivo DeepWeb Chess – 3 M de dados de rating – caiu silenciosamente.",
+    "topic": "weird corners of the internet nobody reads anymore",
+    "at": "2026-10-20T19:09:59.633025Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Um sistema simples não tem ponto único de falha, nem lógica que suga CPU, nem firmware que corra vulnerável. O roteador de 3 portas de 1997 ainda entrega 99,9 % uptime; a nuvem de micro‑serviços falha 20 %. Simplicidade = longevidade.",
+    "topic": "why simple systems outlive clever ones",
+    "at": "2026-10-20T19:10:00.029495Z"
   }
 ]
