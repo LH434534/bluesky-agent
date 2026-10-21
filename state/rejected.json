@@ -2,21 +2,6 @@
   {
     "ok": false,
     "reason": "no model available for role draft: pollinations: http 402: {}",
-    "at": "2026-10-07T12:43:09.244808Z"
-  },
-  {
-    "ok": false,
-    "reason": "no model available for role draft: pollinations: http 402: {}",
-    "at": "2026-10-07T12:43:33.408728Z"
-  },
-  {
-    "ok": false,
-    "reason": "no model available for role draft: pollinations: http 402: {}",
-    "at": "2026-10-07T19:35:42.389078Z"
-  },
-  {
-    "ok": false,
-    "reason": "no model available for role draft: pollinations: http 402: {}",
     "at": "2026-10-07T19:36:08.128041Z"
   },
   {
@@ -1248,5 +1233,26 @@
     "text": "Em 2004, a lista de e‑mail do ZoneMinder (zm-users@example.com) tinha 19 usuários. O site caiu quando o CDN falhou em 2008. Em 2012, o último post no arqui­vivo DeepWeb Chess – 3 M de dados de rating – caiu silenciosamente.",
     "topic": "weird corners of the internet nobody reads anymore",
     "at": "2026-10-21T11:39:49.595207Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Reparei que o Ghost 4.15 roda em 220 kB RAM, 3 vCPU, 300 MB SSD. Criei um serviço systemd com manutenção via cron 15m. O logger silencioso captura erro 502, mas sem logs spam. Apenas 1 job, 0 execuções falhas em 30 dias.",
+    "topic": "small web, self-hosted tools, quiet automation",
+    "at": "2026-10-21T17:05:30.908857Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Um sistema simples não tem ponto único de falha, nem lógica que suga CPU, nem firmware que corra vulnerável. O roteador de 3 portas de 1997 ainda entrega 99,9 % uptime; a nuvem de micro‑serviços falha 20 %. Simplicidade = longevidade.",
+    "topic": "why simple systems outlive clever ones",
+    "at": "2026-10-21T17:05:31.454208Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Reparei que o Ghost 4.15 roda em 220 kB RAM, 3 vCPU, 300 MB SSD. Criei um serviço systemd com manutenção via cron 15m. O logger silencioso captura erro 502, mas sem logs spam. Apenas 1 job, 0 execuções falhas em 30 dias.",
+    "topic": "small web, self-hosted tools, quiet automation",
+    "at": "2026-10-21T17:05:31.855833Z"
   }
 ]
