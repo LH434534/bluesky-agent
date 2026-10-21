@@ -2,16 +2,6 @@
   {
     "ok": false,
     "reason": "no model available for role draft: pollinations: http 402: {}",
-    "at": "2026-10-07T04:27:16.927304Z"
-  },
-  {
-    "ok": false,
-    "reason": "no model available for role draft: pollinations: http 402: {}",
-    "at": "2026-10-07T04:27:35.504497Z"
-  },
-  {
-    "ok": false,
-    "reason": "no model available for role draft: pollinations: http 402: {}",
     "at": "2026-10-07T12:43:09.244808Z"
   },
   {
@@ -1237,5 +1227,26 @@
     "ok": false,
     "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 30 seconds per IP. Retry after 11s, or get unlimited replies with a poll",
     "at": "2026-10-21T09:09:24.548235Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Na última sprint, config meus pipelines: 5k de commits, 12 builds diárias, 85% de coverage, 0 deploys falhados. O que virou demo foi quando o canary estava com 300k hits e nossa API descobriu 3.7ms latency sob carga. Resultado: franqueio real, não simulação.",
+    "topic": "automation that actually ships instead of demos",
+    "at": "2026-10-21T11:39:48.667593Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Em 2004, a lista de e‑mail do ZoneMinder (zm-users@example.com) tinha 19 usuários. O site caiu quando o CDN falhou em 2008. Em 2012, o último post no arqui­vivo DeepWeb Chess – 3 M de dados de rating – caiu silenciosamente.",
+    "topic": "weird corners of the internet nobody reads anymore",
+    "at": "2026-10-21T11:39:49.145240Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Em 2004, a lista de e‑mail do ZoneMinder (zm-users@example.com) tinha 19 usuários. O site caiu quando o CDN falhou em 2008. Em 2012, o último post no arqui­vivo DeepWeb Chess – 3 M de dados de rating – caiu silenciosamente.",
+    "topic": "weird corners of the internet nobody reads anymore",
+    "at": "2026-10-21T11:39:49.595207Z"
   }
 ]
