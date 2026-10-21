@@ -1260,5 +1260,15 @@
     "text": "Na última sprint, config meus pipelines: 5k de commits, 12 builds diárias, 85% de coverage, 0 deploys falhados. O que virou demo foi quando o canary estava com 300k hits e nossa API descobriu 3.7ms latency sob carga. Resultado: franqueio real, não simulação.",
     "topic": "automation that actually ships instead of demos",
     "at": "2026-10-21T21:34:59.003354Z"
+  },
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 30 seconds per IP. Retry after 10s, or get unlimited replies with a poll",
+    "at": "2026-10-21T23:03:34.200583Z"
+  },
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 30 seconds per IP. Retry after 4s, or get unlimited replies with a polle",
+    "at": "2026-10-21T23:03:40.193933Z"
   }
 ]
