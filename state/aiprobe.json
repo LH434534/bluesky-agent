@@ -49,7 +49,7 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"minimax/minimax-m3.1-flash:free\",\"canonical_slug\":\"minimax/minimax-m3.1-flash-20261019\",\"hugging_face_id\":null,\"name\":\"MiniMax: MiniMax M3.1 Flash (free)\",\"created\":1792379569,\"descrip"
+    "body": "{\"data\":[{\"id\":\"recursive/flint-v1.0:free\",\"canonical_slug\":\"recursive/flint-v1.0-20261021\",\"hugging_face_id\":\"RecursiveSI/flint\",\"name\":\"Recursive: Flint (free)\",\"created\":1792422073,\"description\":\"F"
   },
   "ollama-cloud": {
     "status": 200,
