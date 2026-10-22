@@ -1270,5 +1270,15 @@
     "ok": false,
     "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 30 seconds per IP. Retry after 4s, or get unlimited replies with a polle",
     "at": "2026-10-21T23:03:40.193933Z"
+  },
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 30 seconds per IP. Retry after 17s, or get unlimited replies with a poll",
+    "at": "2026-10-22T03:23:41.069821Z"
+  },
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 30 seconds per IP. Retry after 12s, or get unlimited replies with a poll",
+    "at": "2026-10-22T03:23:46.492050Z"
   }
 ]
