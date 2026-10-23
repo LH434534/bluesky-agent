@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"recursive/flint-v1.0:free\",\"canonical_slug\":\"recursive/flint-v1.0-20261021\",\"hugging_face_id\":\"RecursiveSI/flint\",\"name\":\"Recursive: Flint (free)\",\"created\":1792622765,\"description\":\"F"
+    "body": "{\"data\":[{\"id\":\"moonshotai/kimi-k3.1-pro\",\"canonical_slug\":\"moonshotai/kimi-k3.1-pro-20261023\",\"hugging_face_id\":null,\"name\":\"MoonshotAI: Kimi K3.1 Pro\",\"created\":1792778188,\"description\":\"Kimi K3.1 P"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"nemotron-3-nano:30b\",\"model\":\"nemotron-3-nano:30b\",\"modified_at\":\"2025-12-15T00:00:00Z\",\"size\":32645090390,\"digest\":\"a4b4f1851393\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\""
+    "body": "{\"models\":[{\"name\":\"glm-5.3\",\"model\":\"glm-5.3\",\"modified_at\":\"2026-08-28T08:00:00-07:00\",\"size\":755433728000,\"digest\":\"632dfda18c6d\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":nul"
   },
   "cloudflare": {
     "status": 0,
