@@ -1,25 +1,6 @@
 [
   {
     "ok": false,
-    "reason": "too similar to recent post",
-    "text": "Um sistema simples não tem ponto único de falha, nem lógica que suga CPU, nem firmware que corra vulnerável. O roteador de 3 portas de 1997 ainda entrega 99,9 % uptime; a nuvem de micro‑serviços falha 20 %. Simplicidade = longevidade.",
-    "topic": "why simple systems outlive clever ones",
-    "at": "2026-10-10T21:35:03.795873Z"
-  },
-  {
-    "ok": false,
-    "reason": "too similar to recent post",
-    "text": "3h da manhã, 100ml de café, 27mm de broca de 1,6cm. Coloquei 2m de cabo RJ45 num duto de PVC sem luz. Torque 0,8Nm na placa, uso régua de dobras. Falha: fio queimou. Substituí‑o por 1,5W, tudo gira. O silêncio ajuda.",
-    "topic": "building things at 3am and why it works",
-    "at": "2026-10-10T21:35:04.204867Z"
-  },
-  {
-    "ok": false,
-    "reason": "no model available for role draft: pollinations: http 402: {}",
-    "at": "2026-10-11T00:44:17.282780Z"
-  },
-  {
-    "ok": false,
     "reason": "no model available for role draft: pollinations: http 402: {}",
     "at": "2026-10-11T00:44:36.699689Z"
   },
@@ -1296,5 +1277,26 @@
     "text": "Um sistema simples não tem ponto único de falha, nem lógica que suga CPU, nem firmware que corra vulnerável. O roteador de 3 portas de 1997 ainda entrega 99,9 % uptime; a nuvem de micro‑serviços falha 20 %. Simplicidade = longevidade.",
     "topic": "why simple systems outlive clever ones",
     "at": "2026-10-23T16:58:48.975021Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "3h da manhã, 100ml de café, 27mm de broca de 1,6cm. Coloquei 2m de cabo RJ45 num duto de PVC sem luz. Torque 0,8Nm na placa, uso régua de dobras. Falha: fio queimou. Substituí‑o por 1,5W, tudo gira. O silêncio ajuda.",
+    "topic": "building things at 3am and why it works",
+    "at": "2026-10-23T21:19:54.150023Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Um sistema simples não tem ponto único de falha, nem lógica que suga CPU, nem firmware que corra vulnerável. O roteador de 3 portas de 1997 ainda entrega 99,9 % uptime; a nuvem de micro‑serviços falha 20 %. Simplicidade = longevidade.",
+    "topic": "why simple systems outlive clever ones",
+    "at": "2026-10-23T21:19:55.338493Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Reparei que o Ghost 4.15 roda em 220 kB RAM, 3 vCPU, 300 MB SSD. Criei um serviço systemd com manutenção via cron 15m. O logger silencioso captura erro 502, mas sem logs spam. Apenas 1 job, 0 execuções falhas em 30 dias.",
+    "topic": "small web, self-hosted tools, quiet automation",
+    "at": "2026-10-23T21:19:56.206433Z"
   }
 ]
