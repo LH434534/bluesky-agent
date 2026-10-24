@@ -2,23 +2,6 @@
   {
     "ok": false,
     "reason": "no model available for role draft: pollinations: http 402: {}",
-    "at": "2026-10-11T00:44:36.699689Z"
-  },
-  {
-    "ok": false,
-    "reason": "too similar to recent post",
-    "text": "3h da manhã, 100ml de café, 27mm de broca de 1,6cm. Coloquei 2m de cabo RJ45 num duto de PVC sem luz. Torque 0,8Nm na placa, uso régua de dobras. Falha: fio queimou. Substituí‑o por 1,5W, tudo gira. O silêncio ajuda.",
-    "topic": "building things at 3am and why it works",
-    "at": "2026-10-11T05:37:16.142769Z"
-  },
-  {
-    "ok": false,
-    "reason": "no model available for role draft: pollinations: http 402: {}",
-    "at": "2026-10-11T08:20:20.270873Z"
-  },
-  {
-    "ok": false,
-    "reason": "no model available for role draft: pollinations: http 402: {}",
     "at": "2026-10-11T08:20:39.440823Z"
   },
   {
@@ -1298,5 +1281,26 @@
     "text": "Reparei que o Ghost 4.15 roda em 220 kB RAM, 3 vCPU, 300 MB SSD. Criei um serviço systemd com manutenção via cron 15m. O logger silencioso captura erro 502, mas sem logs spam. Apenas 1 job, 0 execuções falhas em 30 dias.",
     "topic": "small web, self-hosted tools, quiet automation",
     "at": "2026-10-23T21:19:56.206433Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Um sistema simples não tem ponto único de falha, nem lógica que suga CPU, nem firmware que corra vulnerável. O roteador de 3 portas de 1997 ainda entrega 99,9 % uptime; a nuvem de micro‑serviços falha 20 %. Simplicidade = longevidade.",
+    "topic": "why simple systems outlive clever ones",
+    "at": "2026-10-24T04:27:10.120644Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Reparei que o Ghost 4.15 roda em 220 kB RAM, 3 vCPU, 300 MB SSD. Criei um serviço systemd com manutenção via cron 15m. O logger silencioso captura erro 502, mas sem logs spam. Apenas 1 job, 0 execuções falhas em 30 dias.",
+    "topic": "small web, self-hosted tools, quiet automation",
+    "at": "2026-10-24T04:27:10.665415Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Em 2004, a lista de e‑mail do ZoneMinder (zm-users@example.com) tinha 19 usuários. O site caiu quando o CDN falhou em 2008. Em 2012, o último post no arqui­vivo DeepWeb Chess – 3 M de dados de rating – caiu silenciosamente.",
+    "topic": "weird corners of the internet nobody reads anymore",
+    "at": "2026-10-24T04:27:11.210689Z"
   }
 ]
