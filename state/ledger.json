@@ -605,6 +605,12 @@
       "target": "",
       "ok": false,
       "at": "2026-10-25T01:10:31.495866Z"
+    },
+    {
+      "kind": "auth",
+      "target": "",
+      "ok": false,
+      "at": "2026-10-25T06:15:58.074430Z"
     }
   ],
   "errors": [
@@ -977,6 +983,11 @@
       "kind": "auth",
       "error": "bsky http 401: {\"error\":\"AuthenticationRequired\",\"message\":\"Invalid identifier or password\"}",
       "at": "2026-10-25T01:10:31.495866Z"
+    },
+    {
+      "kind": "auth",
+      "error": "bsky http 401: {\"error\":\"AuthenticationRequired\",\"message\":\"Invalid identifier or password\"}",
+      "at": "2026-10-25T06:15:58.074430Z"
     }
   ],
   "followed": {
