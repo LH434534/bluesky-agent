@@ -41,7 +41,7 @@
   },
   "hf": {
     "status": 0,
-    "error": "URLError: <urlopen error [Errno -5] No address associated with hostname>"
+    "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
   },
   "groq-public": {
     "status": 0,
@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"moonshotai/kimi-k3.1-pro\",\"canonical_slug\":\"moonshotai/kimi-k3.1-pro-20261023\",\"hugging_face_id\":null,\"name\":\"MoonshotAI: Kimi K3.1 Pro\",\"created\":1792778188,\"description\":\"Kimi K3.1 P"
+    "body": "{\"data\":[{\"id\":\"openai/gpt-6.1-terra\",\"canonical_slug\":\"openai/gpt-6.1-terra-20261026\",\"hugging_face_id\":null,\"name\":\"OpenAI: GPT-6.1 Terra\",\"created\":1793038409,\"description\":\"GPT-6.1 Terra is the mi"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"glm-5.3-flash\",\"model\":\"glm-5.3-flash\",\"modified_at\":\"2026-08-26T07:00:00-07:00\",\"size\":328250014584,\"digest\":\"0c238824336d\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"f"
+    "body": "{\"models\":[{\"name\":\"clef:27b\",\"model\":\"clef:27b\",\"modified_at\":\"2026-10-04T09:00:00-07:00\",\"size\":54969731792,\"digest\":\"490a326b58a0\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":nu"
   },
   "cloudflare": {
     "status": 0,
