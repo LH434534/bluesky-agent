@@ -41,7 +41,7 @@
   },
   "hf": {
     "status": 0,
-    "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
+    "error": "URLError: <urlopen error [Errno -5] No address associated with hostname>"
   },
   "groq-public": {
     "status": 0,
@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"openai/gpt-6.1-terra\",\"canonical_slug\":\"openai/gpt-6.1-terra-20261026\",\"hugging_face_id\":null,\"name\":\"OpenAI: GPT-6.1 Terra\",\"created\":1793038409,\"description\":\"GPT-6.1 Terra is the mi"
+    "body": "{\"data\":[{\"id\":\"openai/gpt-6.1-terra-pro\",\"canonical_slug\":\"openai/gpt-6.1-terra-pro-20261026\",\"hugging_face_id\":null,\"name\":\"OpenAI: GPT-6.1 Terra Pro\",\"created\":1793038556,\"description\":\"GPT-6.1 Ter"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"clef:27b\",\"model\":\"clef:27b\",\"modified_at\":\"2026-10-04T09:00:00-07:00\",\"size\":54969731792,\"digest\":\"490a326b58a0\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":nu"
+    "body": "{\"models\":[{\"name\":\"kimi-k2.6\",\"model\":\"kimi-k2.6\",\"modified_at\":\"2026-04-20T00:00:00Z\",\"size\":595148192736,\"digest\":\"4764ecb21f85\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":null"
   },
   "cloudflare": {
     "status": 0,
