@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"openai/gpt-6.1-terra-pro\",\"canonical_slug\":\"openai/gpt-6.1-terra-pro-20261026\",\"hugging_face_id\":null,\"name\":\"OpenAI: GPT-6.1 Terra Pro\",\"created\":1793038556,\"description\":\"GPT-6.1 Ter"
+    "body": "{\"data\":[{\"id\":\"particle-ai/particle-1\",\"canonical_slug\":\"particle-ai/particle-1-20261027\",\"hugging_face_id\":null,\"name\":\"Particle AI: Particle-1\",\"created\":1793207893,\"description\":\"Particle-1 is a t"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"minimax-m3\",\"model\":\"minimax-m3\",\"modified_at\":\"2026-06-01T00:00:00Z\",\"size\":0,\"digest\":\"9ce5291d9c0e\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":null,\"paramet"
+    "body": "{\"models\":[{\"name\":\"kimi-k2.6\",\"model\":\"kimi-k2.6\",\"modified_at\":\"2026-04-20T00:00:00Z\",\"size\":595148192736,\"digest\":\"4764ecb21f85\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":null"
   },
   "cloudflare": {
     "status": 0,
