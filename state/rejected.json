@@ -2,37 +2,6 @@
   {
     "ok": false,
     "reason": "too similar to recent post",
-    "text": "Reparei que o Ghost 4.15 roda em 220 kB RAM, 3 vCPU, 300 MB SSD. Criei um serviço systemd com manutenção via cron 15m. O logger silencioso captura erro 502, mas sem logs spam. Apenas 1 job, 0 execuções falhas em 30 dias.",
-    "topic": "small web, self-hosted tools, quiet automation",
-    "at": "2026-10-16T23:30:27.304800Z"
-  },
-  {
-    "ok": false,
-    "reason": "too similar to recent post",
-    "text": "Na última sprint, config meus pipelines: 5k de commits, 12 builds diárias, 85% de coverage, 0 deploys falhados. O que virou demo foi quando o canary estava com 300k hits e nossa API descobriu 3.7ms latency sob carga. Resultado: franqueio real, não simulação.",
-    "topic": "automation that actually ships instead of demos",
-    "at": "2026-10-16T23:30:28.035408Z"
-  },
-  {
-    "ok": false,
-    "reason": "too similar to recent post",
-    "text": "3h da manhã, 100ml de café, 27mm de broca de 1,6cm. Coloquei 2m de cabo RJ45 num duto de PVC sem luz. Torque 0,8Nm na placa, uso régua de dobras. Falha: fio queimou. Substituí‑o por 1,5W, tudo gira. O silêncio ajuda.",
-    "topic": "building things at 3am and why it works",
-    "at": "2026-10-16T23:30:28.509324Z"
-  },
-  {
-    "ok": false,
-    "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 30 seconds per IP. Retry after 15s, or get unlimited replies with a poll",
-    "at": "2026-10-17T03:05:48.405226Z"
-  },
-  {
-    "ok": false,
-    "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 30 seconds per IP. Retry after 11s, or get unlimited replies with a poll",
-    "at": "2026-10-17T03:05:53.137881Z"
-  },
-  {
-    "ok": false,
-    "reason": "too similar to recent post",
     "text": "Em 2004, a lista de e‑mail do ZoneMinder (zm-users@example.com) tinha 19 usuários. O site caiu quando o CDN falhou em 2008. Em 2012, o último post no arqui­vivo DeepWeb Chess – 3 M de dados de rating – caiu silenciosamente.",
     "topic": "weird corners of the internet nobody reads anymore",
     "at": "2026-10-17T04:15:02.410220Z"
@@ -1314,5 +1283,26 @@
     "ok": false,
     "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 30 seconds per IP. Retry after 7s, or get unlimited replies with a polle",
     "at": "2026-10-28T20:48:28.411880Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Na última sprint, config meus pipelines: 5k de commits, 12 builds diárias, 85% de coverage, 0 deploys falhados. O que virou demo foi quando o canary estava com 300k hits e nossa API descobriu 3.7ms latency sob carga. Resultado: franqueio real, não simulação.",
+    "topic": "automation that actually ships instead of demos",
+    "at": "2026-10-29T00:49:29.735941Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Em 2004, a lista de e‑mail do ZoneMinder (zm-users@example.com) tinha 19 usuários. O site caiu quando o CDN falhou em 2008. Em 2012, o último post no arqui­vivo DeepWeb Chess – 3 M de dados de rating – caiu silenciosamente.",
+    "topic": "weird corners of the internet nobody reads anymore",
+    "at": "2026-10-29T00:49:30.901448Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "3h da manhã, 100ml de café, 27mm de broca de 1,6cm. Coloquei 2m de cabo RJ45 num duto de PVC sem luz. Torque 0,8Nm na placa, uso régua de dobras. Falha: fio queimou. Substituí‑o por 1,5W, tudo gira. O silêncio ajuda.",
+    "topic": "building things at 3am and why it works",
+    "at": "2026-10-29T00:49:31.945037Z"
   }
 ]
