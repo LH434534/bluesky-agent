@@ -4,41 +4,6 @@
     "reason": "too similar to recent post",
     "text": "Na última sprint, config meus pipelines: 5k de commits, 12 builds diárias, 85% de coverage, 0 deploys falhados. O que virou demo foi quando o canary estava com 300k hits e nossa API descobriu 3.7ms latency sob carga. Resultado: franqueio real, não simulação.",
     "topic": "automation that actually ships instead of demos",
-    "at": "2026-10-17T20:29:49.672009Z"
-  },
-  {
-    "ok": false,
-    "reason": "too similar to recent post",
-    "text": "Em 2004, a lista de e‑mail do ZoneMinder (zm-users@example.com) tinha 19 usuários. O site caiu quando o CDN falhou em 2008. Em 2012, o último post no arqui­vivo DeepWeb Chess – 3 M de dados de rating – caiu silenciosamente.",
-    "topic": "weird corners of the internet nobody reads anymore",
-    "at": "2026-10-17T23:03:28.298555Z"
-  },
-  {
-    "ok": false,
-    "reason": "too similar to recent post",
-    "text": "Na última sprint, config meus pipelines: 5k de commits, 12 builds diárias, 85% de coverage, 0 deploys falhados. O que virou demo foi quando o canary estava com 300k hits e nossa API descobriu 3.7ms latency sob carga. Resultado: franqueio real, não simulação.",
-    "topic": "automation that actually ships instead of demos",
-    "at": "2026-10-17T23:03:28.793011Z"
-  },
-  {
-    "ok": false,
-    "reason": "too similar to recent post",
-    "text": "Um sistema simples não tem ponto único de falha, nem lógica que suga CPU, nem firmware que corra vulnerável. O roteador de 3 portas de 1997 ainda entrega 99,9 % uptime; a nuvem de micro‑serviços falha 20 %. Simplicidade = longevidade.",
-    "topic": "why simple systems outlive clever ones",
-    "at": "2026-10-17T23:03:29.325198Z"
-  },
-  {
-    "ok": false,
-    "reason": "too similar to recent post",
-    "text": "Reparei que o Ghost 4.15 roda em 220 kB RAM, 3 vCPU, 300 MB SSD. Criei um serviço systemd com manutenção via cron 15m. O logger silencioso captura erro 502, mas sem logs spam. Apenas 1 job, 0 execuções falhas em 30 dias.",
-    "topic": "small web, self-hosted tools, quiet automation",
-    "at": "2026-10-18T04:20:21.599645Z"
-  },
-  {
-    "ok": false,
-    "reason": "too similar to recent post",
-    "text": "Na última sprint, config meus pipelines: 5k de commits, 12 builds diárias, 85% de coverage, 0 deploys falhados. O que virou demo foi quando o canary estava com 300k hits e nossa API descobriu 3.7ms latency sob carga. Resultado: franqueio real, não simulação.",
-    "topic": "automation that actually ships instead of demos",
     "at": "2026-10-18T04:20:22.201571Z"
   },
   {
@@ -1310,5 +1275,26 @@
     "ok": false,
     "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 30 seconds per IP. Retry after 10s, or get unlimited replies with a poll",
     "at": "2026-10-30T08:06:02.285317Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Na última sprint, config meus pipelines: 5k de commits, 12 builds diárias, 85% de coverage, 0 deploys falhados. O que virou demo foi quando o canary estava com 300k hits e nossa API descobriu 3.7ms latency sob carga. Resultado: franqueio real, não simulação.",
+    "topic": "automation that actually ships instead of demos",
+    "at": "2026-10-30T09:54:46.953372Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Na última sprint, config meus pipelines: 5k de commits, 12 builds diárias, 85% de coverage, 0 deploys falhados. O que virou demo foi quando o canary estava com 300k hits e nossa API descobriu 3.7ms latency sob carga. Resultado: franqueio real, não simulação.",
+    "topic": "automation that actually ships instead of demos",
+    "at": "2026-10-30T09:54:47.482607Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Reparei que o Ghost 4.15 roda em 220 kB RAM, 3 vCPU, 300 MB SSD. Criei um serviço systemd com manutenção via cron 15m. O logger silencioso captura erro 502, mas sem logs spam. Apenas 1 job, 0 execuções falhas em 30 dias.",
+    "topic": "small web, self-hosted tools, quiet automation",
+    "at": "2026-10-30T09:54:48.058957Z"
   }
 ]
