@@ -1290,5 +1290,15 @@
     "text": "3h da manhã, 100ml de café, 27mm de broca de 1,6cm. Coloquei 2m de cabo RJ45 num duto de PVC sem luz. Torque 0,8Nm na placa, uso régua de dobras. Falha: fio queimou. Substituí‑o por 1,5W, tudo gira. O silêncio ajuda.",
     "topic": "building things at 3am and why it works",
     "at": "2026-11-01T13:11:36.737050Z"
+  },
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 45 seconds per IP. Retry after 29s, or get unlimited replies with a poll",
+    "at": "2026-11-01T18:46:28.550063Z"
+  },
+  {
+    "ok": false,
+    "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 45 seconds per IP. Retry after 23s, or get unlimited replies with a poll",
+    "at": "2026-11-01T18:46:33.975143Z"
   }
 ]
