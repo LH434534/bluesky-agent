@@ -49,7 +49,7 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"inclusionai/ling-3.0-tiny\",\"canonical_slug\":\"inclusionai/ling-3.0-tiny-20260806\",\"hugging_face_id\":\"inclusionAI/Ling-3.0-tiny\",\"name\":\"inclusionAI: Ling 3.0 Tiny\",\"created\":1793858375,"
+    "body": "{\"data\":[{\"id\":\"google/gemini-omni-1.2-flash\",\"canonical_slug\":\"google/gemini-omni-1.2-flash-20261105\",\"hugging_face_id\":null,\"name\":\"Google: Gemini Omni 1.2 Flash\",\"created\":1793898961,\"description\":"
   },
   "ollama-cloud": {
     "status": 200,
