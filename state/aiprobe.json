@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"ricursiveai/ripple-65b-preview\",\"canonical_slug\":\"ricursiveai/ripple-65b-preview-20261104\",\"hugging_face_id\":null,\"name\":\"ricursiveAI/Ripple-65B-Preview\",\"created\":1793818990,\"descript"
+    "body": "{\"data\":[{\"id\":\"inclusionai/ling-3.0-tiny\",\"canonical_slug\":\"inclusionai/ling-3.0-tiny-20260806\",\"hugging_face_id\":\"inclusionAI/Ling-3.0-tiny\",\"name\":\"inclusionAI: Ling 3.0 Tiny\",\"created\":1793858375,"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"gpt-oss:20b\",\"model\":\"gpt-oss:20b\",\"modified_at\":\"2025-08-05T00:00:00Z\",\"size\":13780162412,\"digest\":\"05afbac4bad6\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":n"
+    "body": "{\"models\":[{\"name\":\"glm-5.3\",\"model\":\"glm-5.3\",\"modified_at\":\"2026-08-28T08:00:00-07:00\",\"size\":755433728000,\"digest\":\"632dfda18c6d\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":nul"
   },
   "cloudflare": {
     "status": 0,
