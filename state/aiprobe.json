@@ -41,7 +41,7 @@
   },
   "hf": {
     "status": 0,
-    "error": "URLError: <urlopen error [Errno -5] No address associated with hostname>"
+    "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
   },
   "groq-public": {
     "status": 0,
@@ -53,7 +53,7 @@
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"glm-5.2\",\"model\":\"glm-5.2\",\"modified_at\":\"2026-06-16T08:00:00-07:00\",\"size\":0,\"digest\":\"f553240f6dc4\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":null,\"paramete"
+    "body": "{\"models\":[{\"name\":\"mistral-large-4\",\"model\":\"mistral-large-4\",\"modified_at\":\"2026-10-06T06:00:00-07:00\",\"size\":0,\"digest\":\"52309cacf736\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families"
   },
   "cloudflare": {
     "status": 0,
