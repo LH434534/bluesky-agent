@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"liquid/lfm-3-1.7b\",\"canonical_slug\":\"liquid/lfm-3-1.7b-20261106\",\"hugging_face_id\":\"LiquidAI/LFM3-1.7B\",\"name\":\"LiquidAI: LFM3-1.7B\",\"created\":1794009477,\"description\":\"A compact 1.7B-"
+    "body": "{\"data\":[{\"id\":\"thinkingmachines/inkling-2-small:free\",\"canonical_slug\":\"thinkingmachines/inkling-2-small-20261107\",\"hugging_face_id\":null,\"name\":\"Thinking Machines: Inkling 2 Small (free)\",\"created\":"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"kimi-k2.6\",\"model\":\"kimi-k2.6\",\"modified_at\":\"2026-04-20T00:00:00Z\",\"size\":595148192736,\"digest\":\"4764ecb21f85\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":null"
+    "body": "{\"models\":[{\"name\":\"gemma4:31b\",\"model\":\"gemma4:31b\",\"modified_at\":\"2026-04-02T09:00:00-08:00\",\"size\":62546177752,\"digest\":\"221b330d11a8\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families"
   },
   "cloudflare": {
     "status": 0,
