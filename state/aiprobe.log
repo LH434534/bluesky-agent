@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"thinkingmachines/inkling-2-small:free\",\"canonical_slug\":\"thinkingmachines/inkling-2-small-20261107\",\"hugging_face_id\":null,\"name\":\"Thinking Machines: Inkling 2 Small (free)\",\"created\":"
+    "body": "{\"data\":[{\"id\":\"nex-agi/nex-n2.6\",\"canonical_slug\":\"nex-agi/nex-n2.6-20261110\",\"hugging_face_id\":\"nex-agi/Nex-N2.6\",\"name\":\"Nex AGI: Nex-N2.6\",\"created\":1794282379,\"description\":\"Nex-N2.6 is an agenti"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"gemma4:31b\",\"model\":\"gemma4:31b\",\"modified_at\":\"2026-04-02T09:00:00-08:00\",\"size\":62546177752,\"digest\":\"221b330d11a8\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families"
+    "body": "{\"models\":[{\"name\":\"kimi-k2.7-code\",\"model\":\"kimi-k2.7-code\",\"modified_at\":\"2026-06-12T00:00:00Z\",\"size\":595148192736,\"digest\":\"1a7e88d8c572\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"fami"
   },
   "cloudflare": {
     "status": 0,
