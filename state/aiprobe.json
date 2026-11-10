@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"nex-agi/nex-n2.6\",\"canonical_slug\":\"nex-agi/nex-n2.6-20261110\",\"hugging_face_id\":\"nex-agi/Nex-N2.6\",\"name\":\"Nex AGI: Nex-N2.6\",\"created\":1794282379,\"description\":\"Nex-N2.6 is an agenti"
+    "body": "{\"data\":[{\"id\":\"baidu/ernie-5.5-flash-preview\",\"canonical_slug\":\"baidu/ernie-5.5-flash-preview-20261110\",\"hugging_face_id\":\"baidu/ERNIE-5.5-Flash-Preview\",\"name\":\"Baidu: ERNIE-5.5-Flash-Preview\",\"crea"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"kimi-k2.7-code\",\"model\":\"kimi-k2.7-code\",\"modified_at\":\"2026-06-12T00:00:00Z\",\"size\":595148192736,\"digest\":\"1a7e88d8c572\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"fami"
+    "body": "{\"models\":[{\"name\":\"mimo-v2.6-pro\",\"model\":\"mimo-v2.6-pro\",\"modified_at\":\"2026-09-22T09:00:00-07:00\",\"size\":542177872920,\"digest\":\"e3752bf0ce88\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"f"
   },
   "cloudflare": {
     "status": 0,
