@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"baidu/ernie-5.5-flash-preview\",\"canonical_slug\":\"baidu/ernie-5.5-flash-preview-20261110\",\"hugging_face_id\":\"baidu/ERNIE-5.5-Flash-Preview\",\"name\":\"Baidu: ERNIE-5.5-Flash-Preview\",\"crea"
+    "body": "{\"data\":[{\"id\":\"baidu/ernie-5.5-flash-preview:free\",\"canonical_slug\":\"baidu/ernie-5.5-flash-preview-20261110\",\"hugging_face_id\":\"baidu/ERNIE-5.5-Flash-Preview\",\"name\":\"Baidu: ERNIE-5.5-Flash-Preview ("
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"gpt-oss:120b\",\"model\":\"gpt-oss:120b\",\"modified_at\":\"2025-08-05T00:00:00Z\",\"size\":65290180781,\"digest\":\"d98fe6ba01e6\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\""
+    "body": "{\"models\":[{\"name\":\"gemma4:31b\",\"model\":\"gemma4:31b\",\"modified_at\":\"2026-04-02T09:00:00-08:00\",\"size\":62546177752,\"digest\":\"221b330d11a8\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families"
   },
   "cloudflare": {
     "status": 0,
