@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"baidu/ernie-5.5-flash-preview:free\",\"canonical_slug\":\"baidu/ernie-5.5-flash-preview-20261110\",\"hugging_face_id\":\"baidu/ERNIE-5.5-Flash-Preview\",\"name\":\"Baidu: ERNIE-5.5-Flash-Preview ("
+    "body": "{\"data\":[{\"id\":\"google/gemini-4-hydrogen\",\"canonical_slug\":\"google/gemini-4-hydrogen-20261112\",\"hugging_face_id\":null,\"name\":\"Google: Gemini 4 Hydrogen\",\"created\":1794506460,\"description\":\"Gemini 4 Hy"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"kimi-k3.1-pro\",\"model\":\"kimi-k3.1-pro\",\"modified_at\":\"2026-11-04T08:00:00-08:00\",\"size\":1561293160568,\"digest\":\"dae5e179170d\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\""
+    "body": "{\"models\":[{\"name\":\"glm-5.2\",\"model\":\"glm-5.2\",\"modified_at\":\"2026-06-16T08:00:00-07:00\",\"size\":0,\"digest\":\"f553240f6dc4\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":null,\"paramete"
   },
   "cloudflare": {
     "status": 0,
