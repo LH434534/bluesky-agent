@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"tencent/hy4-flash\",\"canonical_slug\":\"tencent/hy4-flash-20261116\",\"hugging_face_id\":null,\"name\":\"Tencent: Hy4 flash\",\"created\":1794838706,\"description\":\"Hy4 flash is a cost-efficient va"
+    "body": "{\"data\":[{\"id\":\"openai/gpt-6.2-astra-pro\",\"canonical_slug\":\"openai/gpt-6.2-astra-pro-20261117\",\"hugging_face_id\":null,\"name\":\"OpenAI: GPT-6.2 Astra Pro\",\"created\":1794938432,\"description\":\"GPT-6.2 Ast"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"nemotron-3-super\",\"model\":\"nemotron-3-super\",\"modified_at\":\"2026-03-11T00:00:00Z\",\"size\":230500000000,\"digest\":\"da11955bb451\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\""
+    "body": "{\"models\":[{\"name\":\"kimi-k2.7-code\",\"model\":\"kimi-k2.7-code\",\"modified_at\":\"2026-06-12T00:00:00Z\",\"size\":595148192736,\"digest\":\"1a7e88d8c572\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"fami"
   },
   "cloudflare": {
     "status": 0,
