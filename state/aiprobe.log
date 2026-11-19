@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"openai/gpt-6.2-astra-pro\",\"canonical_slug\":\"openai/gpt-6.2-astra-pro-20261117\",\"hugging_face_id\":null,\"name\":\"OpenAI: GPT-6.2 Astra Pro\",\"created\":1794938432,\"description\":\"GPT-6.2 Ast"
+    "body": "{\"data\":[{\"id\":\"google/gemini-4-neon\",\"canonical_slug\":\"google/gemini-4-neon-20261118\",\"hugging_face_id\":null,\"name\":\"Google: Gemini 4 Neon\",\"created\":1795006977,\"description\":\"Gemini 4 Neon is a fast"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"kimi-k2.6\",\"model\":\"kimi-k2.6\",\"modified_at\":\"2026-04-20T00:00:00Z\",\"size\":595148192736,\"digest\":\"4764ecb21f85\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":null"
+    "body": "{\"models\":[{\"name\":\"minimax-m3\",\"model\":\"minimax-m3\",\"modified_at\":\"2026-06-01T00:00:00Z\",\"size\":0,\"digest\":\"9ce5291d9c0e\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":null,\"paramet"
   },
   "cloudflare": {
     "status": 0,
