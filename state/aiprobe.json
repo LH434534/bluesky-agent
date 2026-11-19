@@ -53,7 +53,7 @@
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"minimax-m3\",\"model\":\"minimax-m3\",\"modified_at\":\"2026-06-01T00:00:00Z\",\"size\":0,\"digest\":\"9ce5291d9c0e\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":null,\"paramet"
+    "body": "{\"models\":[{\"name\":\"nemotron-3-super\",\"model\":\"nemotron-3-super\",\"modified_at\":\"2026-03-11T00:00:00Z\",\"size\":230500000000,\"digest\":\"da11955bb451\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\""
   },
   "cloudflare": {
     "status": 0,
