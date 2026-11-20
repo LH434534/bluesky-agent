@@ -1,37 +1,6 @@
 [
   {
     "ok": false,
-    "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 45 seconds per IP. Retry after 21s, or get unlimited replies with a poll",
-    "at": "2026-11-05T20:59:41.424293Z"
-  },
-  {
-    "ok": false,
-    "reason": "too similar to recent post",
-    "text": "3h da manhã, 100ml de café, 27mm de broca de 1,6cm. Coloquei 2m de cabo RJ45 num duto de PVC sem luz. Torque 0,8Nm na placa, uso régua de dobras. Falha: fio queimou. Substituí‑o por 1,5W, tudo gira. O silêncio ajuda.",
-    "topic": "building things at 3am and why it works",
-    "at": "2026-11-05T23:34:05.117396Z"
-  },
-  {
-    "ok": false,
-    "reason": "too similar to recent post",
-    "text": "Um sistema simples não tem ponto único de falha, nem lógica que suga CPU, nem firmware que corra vulnerável. O roteador de 3 portas de 1997 ainda entrega 99,9 % uptime; a nuvem de micro‑serviços falha 20 %. Simplicidade = longevidade.",
-    "topic": "why simple systems outlive clever ones",
-    "at": "2026-11-05T23:34:05.975942Z"
-  },
-  {
-    "ok": false,
-    "reason": "too similar to recent post",
-    "text": "Na última sprint, config meus pipelines: 5k de commits, 12 builds diárias, 85% de coverage, 0 deploys falhados. O que virou demo foi quando o canary estava com 300k hits e nossa API descobriu 3.7ms latency sob carga. Resultado: franqueio real, não simulação.",
-    "topic": "automation that actually ships instead of demos",
-    "at": "2026-11-05T23:34:06.853866Z"
-  },
-  {
-    "ok": false,
-    "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 45 seconds per IP. Retry after 28s, or get unlimited replies with a poll",
-    "at": "2026-11-06T02:01:08.569067Z"
-  },
-  {
-    "ok": false,
     "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 45 seconds per IP. Retry after 22s, or get unlimited replies with a poll",
     "at": "2026-11-06T02:01:13.867583Z"
   },
@@ -1266,5 +1235,26 @@
     "ok": false,
     "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 45 seconds per IP. Retry after 32s, or get unlimited replies with a poll",
     "at": "2026-11-20T18:21:53.538410Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "3h da manhã, 100ml de café, 27mm de broca de 1,6cm. Coloquei 2m de cabo RJ45 num duto de PVC sem luz. Torque 0,8Nm na placa, uso régua de dobras. Falha: fio queimou. Substituí‑o por 1,5W, tudo gira. O silêncio ajuda.",
+    "topic": "building things at 3am and why it works",
+    "at": "2026-11-20T20:01:16.575699Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Em 2004, a lista de e‑mail do ZoneMinder (zm-users@example.com) tinha 19 usuários. O site caiu quando o CDN falhou em 2008. Em 2012, o último post no arqui­vivo DeepWeb Chess – 3 M de dados de rating – caiu silenciosamente.",
+    "topic": "weird corners of the internet nobody reads anymore",
+    "at": "2026-11-20T20:01:17.494086Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "3h da manhã, 100ml de café, 27mm de broca de 1,6cm. Coloquei 2m de cabo RJ45 num duto de PVC sem luz. Torque 0,8Nm na placa, uso régua de dobras. Falha: fio queimou. Substituí‑o por 1,5W, tudo gira. O silêncio ajuda.",
+    "topic": "building things at 3am and why it works",
+    "at": "2026-11-20T20:01:18.208734Z"
   }
 ]
