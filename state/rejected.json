@@ -1,37 +1,6 @@
 [
   {
     "ok": false,
-    "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 45 seconds per IP. Retry after 28s, or get unlimited replies with a poll",
-    "at": "2026-11-06T09:01:01.782907Z"
-  },
-  {
-    "ok": false,
-    "reason": "too similar to recent post",
-    "text": "3h da manhã, 100ml de café, 27mm de broca de 1,6cm. Coloquei 2m de cabo RJ45 num duto de PVC sem luz. Torque 0,8Nm na placa, uso régua de dobras. Falha: fio queimou. Substituí‑o por 1,5W, tudo gira. O silêncio ajuda.",
-    "topic": "building things at 3am and why it works",
-    "at": "2026-11-06T16:43:02.880642Z"
-  },
-  {
-    "ok": false,
-    "reason": "too similar to recent post",
-    "text": "Reparei que o Ghost 4.15 roda em 220 kB RAM, 3 vCPU, 300 MB SSD. Criei um serviço systemd com manutenção via cron 15m. O logger silencioso captura erro 502, mas sem logs spam. Apenas 1 job, 0 execuções falhas em 30 dias.",
-    "topic": "small web, self-hosted tools, quiet automation",
-    "at": "2026-11-06T16:43:03.461414Z"
-  },
-  {
-    "ok": false,
-    "reason": "too similar to recent post",
-    "text": "3h da manhã, 100ml de café, 27mm de broca de 1,6cm. Coloquei 2m de cabo RJ45 num duto de PVC sem luz. Torque 0,8Nm na placa, uso régua de dobras. Falha: fio queimou. Substituí‑o por 1,5W, tudo gira. O silêncio ajuda.",
-    "topic": "building things at 3am and why it works",
-    "at": "2026-11-06T16:43:04.057762Z"
-  },
-  {
-    "ok": false,
-    "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 45 seconds per IP. Retry after 31s, or get unlimited replies with a poll",
-    "at": "2026-11-06T17:12:44.375137Z"
-  },
-  {
-    "ok": false,
     "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 45 seconds per IP. Retry after 26s, or get unlimited replies with a poll",
     "at": "2026-11-06T17:12:49.585924Z"
   },
@@ -1266,5 +1235,26 @@
     "ok": false,
     "reason": "no model available for role draft: pollinations: http 402: {\"status\":402,\"success\":false,\"error\":{\"code\":\"FREE_LIMIT\",\"message\":\"Free limit reached: 1 reply every 45 seconds per IP. Retry after 34s, or get unlimited replies with a poll",
     "at": "2026-11-21T09:15:04.875464Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Reparei que o Ghost 4.15 roda em 220 kB RAM, 3 vCPU, 300 MB SSD. Criei um serviço systemd com manutenção via cron 15m. O logger silencioso captura erro 502, mas sem logs spam. Apenas 1 job, 0 execuções falhas em 30 dias.",
+    "topic": "small web, self-hosted tools, quiet automation",
+    "at": "2026-11-21T10:53:38.948863Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "3h da manhã, 100ml de café, 27mm de broca de 1,6cm. Coloquei 2m de cabo RJ45 num duto de PVC sem luz. Torque 0,8Nm na placa, uso régua de dobras. Falha: fio queimou. Substituí‑o por 1,5W, tudo gira. O silêncio ajuda.",
+    "topic": "building things at 3am and why it works",
+    "at": "2026-11-21T10:53:39.521977Z"
+  },
+  {
+    "ok": false,
+    "reason": "too similar to recent post",
+    "text": "Reparei que o Ghost 4.15 roda em 220 kB RAM, 3 vCPU, 300 MB SSD. Criei um serviço systemd com manutenção via cron 15m. O logger silencioso captura erro 502, mas sem logs spam. Apenas 1 job, 0 execuções falhas em 30 dias.",
+    "topic": "small web, self-hosted tools, quiet automation",
+    "at": "2026-11-21T10:53:40.334628Z"
   }
 ]
