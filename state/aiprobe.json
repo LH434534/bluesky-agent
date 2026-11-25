@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"xiaomi/mimo-v2.6-flash-mopd\",\"canonical_slug\":\"xiaomi/mimo-v2.6-flash-mopd-20260927\",\"hugging_face_id\":\"XiaomiMiMo/MiMo-V2.6-Flash-MOPD\",\"name\":\"Xiaomi: MiMo-V2.6-Flash-MOPD\",\"created\""
+    "body": "{\"data\":[{\"id\":\"upstage/solar-mini-4-5\",\"canonical_slug\":\"upstage/solar-mini-4-5-20261125\",\"hugging_face_id\":null,\"name\":\"Upstage: Solar Mini 4.5 (Preview)\",\"created\":1795562304,\"description\":\"Solar M"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"kimi-k3.1-pro\",\"model\":\"kimi-k3.1-pro\",\"modified_at\":\"2026-11-04T08:00:00-08:00\",\"size\":1561293160568,\"digest\":\"dae5e179170d\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\""
+    "body": "{\"models\":[{\"name\":\"inkling-2-small\",\"model\":\"inkling-2-small\",\"modified_at\":\"2026-11-12T09:00:00-08:00\",\"size\":383072987216,\"digest\":\"87d960727b0c\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\""
   },
   "cloudflare": {
     "status": 0,
