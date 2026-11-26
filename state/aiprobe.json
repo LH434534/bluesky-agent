@@ -49,11 +49,11 @@
   },
   "openrouter-public": {
     "status": 200,
-    "body": "{\"data\":[{\"id\":\"upstage/solar-mini-4-5\",\"canonical_slug\":\"upstage/solar-mini-4-5-20261125\",\"hugging_face_id\":null,\"name\":\"Upstage: Solar Mini 4.5 (Preview)\",\"created\":1795562304,\"description\":\"Solar M"
+    "body": "{\"data\":[{\"id\":\"inclusionai/lingsante-3.1-air-vl\",\"canonical_slug\":\"inclusionai/lingsante-3.1-air-vl-20261126\",\"hugging_face_id\":\"inclusionAI/LingSante-3.1-air-VL\",\"name\":\"inclusionAI: LingSante 3.1 A"
   },
   "ollama-cloud": {
     "status": 200,
-    "body": "{\"models\":[{\"name\":\"mimo-v2.6-flash\",\"model\":\"mimo-v2.6-flash\",\"modified_at\":\"2026-09-22T09:00:00-07:00\",\"size\":168268709272,\"digest\":\"8b2b3c0ae11a\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\""
+    "body": "{\"models\":[{\"name\":\"kimi-k2.6\",\"model\":\"kimi-k2.6\",\"modified_at\":\"2026-04-20T00:00:00Z\",\"size\":595148192736,\"digest\":\"4764ecb21f85\",\"details\":{\"parent_model\":\"\",\"format\":\"\",\"family\":\"\",\"families\":null"
   },
   "cloudflare": {
     "status": 0,
